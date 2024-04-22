@@ -1,0 +1,519 @@
+<?xml version="1.0" encoding="utf-8"?>
+<components:EPanel xmlns:mx="http://www.adobe.com/2006/mxml"
+				   creationComplete="initMod()" 
+				   xmlns:components="framework.components.*"
+				   width="1000" height="600"  title="ABM de Usuarios - Posta" 
+				   x="1" y="1" autoLayout="false" backgroundImage="modules/ABMUsuarios/Webbluebackground.jpg" backgroundSize="100%"> <!-- backgroundColor="#F3F5B2" -->
+	 
+	<!-- VERSION MODIFICADA PARA ABM PERSONAS - DEMO - 2013 -->
+	
+	<mx:Script>
+		<![CDATA[
+			import Modules.ABMPersonas.Application.bussiness.Entities.DTOs.ABMPersonasDTO_consulta;
+			import Modules.ABMPersonas.Application.presentationModel.MainScreenModel;
+			import Modules.ABMPersonas.data.conf.Messages;
+			
+			import application.domain.GlobalModel;
+			
+			import mx.collections.ArrayCollection;
+			import mx.controls.Alert;
+			import mx.managers.PopUpManager;
+			
+			//20160805 import application.domain.PmXXXSubDomainContextModel;
+			
+ 			
+			/*20160805 [Inject]
+			[Bindable] */ //INYECTAR implica una asignacion.. osea.. de un obj. si uso clase con statics vars es una cosa pero xa vars de obj
+						 //falt asignar el objeto ( si no existe un new , y queda una dependencia de la screen a la clase pm de la screen
+						 // opcion 2 no usar un pm y meter las vars acá, sino 
+						//opcion 3, creo una inst de la clase acá pero que sea static la instancia para que la pueda referenciar 
+						// desde el command + eservice luego el action o fault haran algo con la screen usando las vars, bueno esas
+						// vars estn en el pm, el command debe tener acceso al pm. de ultima opcion a) que sean static todas las vars
+						//opcion b) setear al pm una ref ptr al mainscreen y luego setear en el command una ref ptro al pm q x trans 
+						//tiene acceso a la mainscreen ( que todas las vars sean public asi son de acceso y modif , no haria falta 
+						// pasando ptros q sean static, la opcion de TODAS static vars podria ser mas rapida igual mas q nada para no pasar 
+						//como referencia a cada capa un ptro de la capa actual (previa) ver.. o static  ptros..  
+			
+			/*20160806 NEW: 
+			NO NECESITO REF EN VR XQ LAS VARS SON STATIC GLOBALES ACCESESIBLES POR CLASE DESDE TODOS LADOS - NO necesito vars ni refs
+			-----------
+			
+			public var globalModelRef:GlobalModel; //esta es global (statics..) tipo singleton osea hay 1 sola inst de esas vars de esa clase  
+													// especifica asi q fué. (si hago lo mismo por cada ms de c/modulo son clases especif asi 
+													// que deberia funcionar.  PERO CON PTRO ME ASEGURO ACCESO A TODO MIEMBRO de la clase 
+													// osea si quiero accesar un Ecomp en una ms desde el pm o command tengo que tener ref a esta
+													// ASI QUE MEJOR CON PTRO ESTO OTRO !
+			*/
+			
+			/* 20160805 [Inject]
+			[Bindable] */
+			public var msPM:MainScreenModel;
+			
+			[Bindable]
+			public var acDgPersonas:ArrayCollection=new ArrayCollection; //array para la grilla.(de personas)
+			
+			/*20161026 con una sola grilla alcanza
+			[Bindable] 
+			public var acDgResueltos:ArrayCollection=new ArrayCollection;*/
+			
+			
+			
+			private function initMod():void {
+				//20160806
+				msPM = new MainScreenModel;
+				//20160805
+				msPM.msPtr=this;
+				
+				//20160828
+				svcCmbEdades.send();
+				//20160828
+				ConsultarPersonas(new Event("dummy"));
+				
+				/* com 20161026 
+				//agrego 1 en blanco a las otras emparejar la vista nomas (asqueroso, deberia quitar el blanco de dgClientes en realidad)
+				
+				var obj:Object = new Object();
+				obj.cliente = "";
+				obj.descripPedido = "";
+				acDgPersonas.addItem(obj); //"cliente");// obj); //newPedido); //"cliente"); //DgPedidosRegData);
+				obj = null;
+				
+				var obj:Object = new Object();
+				obj.cliente = "";
+				obj.descripPedido = "";
+				acDgResueltos.addItem(obj); //"cliente");// obj); //newPedido); //"cliente"); //DgPedidosRegData);
+				obj = null;
+				
+				fin*/
+				
+				/* 20160805 a este combo le asigno un modelo xml (ver ej gabriel o copc ) o mejor x ahora sin combo
+				cmbEdades.populate();
+				
+				cmbClientex.selectedIndex = 3;
+				*/
+				
+				
+				//20160828 btnAgregarPedido.addEventListener(MouseEvent.CLICK, agregarPedido); //20160828 ConsultarPersonas);
+				btnAgregarPedido.addEventListener(MouseEvent.CLICK, agregarPedido);
+				btnSaveTheDay.addEventListener(MouseEvent.CLICK, SaveTheDay);
+				
+				
+				
+				/*20160805
+				//cmbEdades.addEventListener(MouseEvent.CLICK, LlenarCombo);
+				lnkEliminar.addEventListener(MouseEvent.CLICK, EliminarUsuario);
+				lnkCerrar.addEventListener(MouseEvent.CLICK, CerrarPanel);
+				grpTipo.addEventListener(ItemClickEvent.ITEM_CLICK, MostrarValor);
+				*/
+/*				
+				cmbEdades.addEventListener("change", MostrarIdCliente);
+				cmbSectores.addEventListener("change", MostrarIdSector);
+*/
+			   
+				//20150803 cmbEdades.addEventListener(EComboBoxEvent.DATA_LOADED_OK, cmbCliDataLoaded);
+				/*20160805 x ahora lo saco 
+				//20160805 
+				cmbEdades.addEventListener("change", cmbCliDataLoaded);
+				
+				msPM.addEventListener(MainScreenModel.SETEAR_COMBO_CLI,cmbCliDataLoaded);
+				*/
+				
+				
+				/*20160805 
+				InicializarFecha(dtfActivacion);
+				dtfActivacion.showToday; */
+				
+				//txtIdUsuario.setFocus();
+				
+			}
+			
+			/*20160805 private function MostrarValor(e:ItemClickEvent):void
+			{
+				Alert.show(e.label);
+			} */
+			
+			/*20160805 private function MostrarIdCliente(e:Event):void
+			{
+				
+				if(cmbEdades.selectedIndex != -1)
+				{
+			        Alert.show("Id de Cliente Seleccionado: "+cmbEdades.selectedItem.data);
+				}
+				
+			}*/
+			
+			/*20160805
+			private function SeleccionarItem(e:Event):void
+			{
+				// Alert.show("pepepepep");
+				//20160806 cmbEdades.selectedIndex = msPM.cmbIndexCli;
+			}
+			
+			private function MostrarIdSector(e:Event):void
+			{
+				 
+				if(cmbSectores.selectedIndex != -1)
+				{
+					Alert.show("Id de Sector Seleccionado: "+cmbSectores.selectedItem.data);
+				}
+				
+			}
+			*/
+			
+/*			
+			private function _btnDeleteOnClick():void { 
+				var abmUsuariosDTO_baja:ABMUsuariosDTO_baja = new ABMUsuariosDTO_baja (txtUsuario.text,txtPassword.text);
+				msPM.sendDeleteRequestMSG(Messages.USUARIOS_DELETE_MESSAGE ,abmUsuariosDTO_baja); 
+			}
+			
+			private function _btnAltaOnClick():void { 
+				var abmUsuariosDTO_alta:ABMUsuariosDTO_alta = new ABMUsuariosDTO_alta (txtUsuario.text,txtPassword.text,txtMail.text);
+				msPM.sendAltaRequestMSG(Messages.USUARIOS_ALTA_MESSAGE ,abmUsuariosDTO_alta); 
+			}
+*/
+			/*20160806 Borrar todo esto 
+			private function InicializarFecha(fecha:EDateField):void
+			{
+				fecha.dayNames = ['Dom', 'Lun', 'Mar', 'Mie', 'Jue', 'Vie', 'Sab'];
+				fecha.monthNames = ['Enero', 'Febrero', 'Marzo', 'Abril', 'Mayo', 'Junio',
+					                'Julio', 'Agosto', 'Septiembre', 'Octubre','Noviembre', 'Diciembre'];
+			}
+			*/
+			
+			/*20160805 private function CerrarPanel(e:Event):void
+			{
+				trace(this);
+			} 
+			*/
+			
+			private function ConsultarPersonas(e:Event):void {
+				try
+				{
+					var abmPersonasDTO_consulta:ABMPersonasDTO_consulta = new ABMPersonasDTO_consulta (); //20160805 (txtIdUsuario.text);
+					msPM.sendConsultaRequestMSG(Messages.USUARIOS_CONSULTA_MESSAGE,abmPersonasDTO_consulta);
+				} 
+				catch(error:Error) 
+				{
+					trace(error.message);
+				}
+				
+			}
+			
+			
+			
+			private function SaveTheDay(e:Event):void {
+				try
+				{
+					showAlert("Pedidos Realizados y Pendientes del día han quedado almacenados en la base de datos", "PEDIDOS DEL DIA GRABADOS!");
+					
+				} 
+				catch(error:Error) 
+				{
+					trace(error.message);
+				} 
+			}
+			
+			private function agregarPedido(e:Event):void {
+				try
+				{
+					//ACA VA EL CODIGO PARA TOMAR LA DATA DEL FORMULARIO Y AGREGAR UNA NUEVA FILA EN LA GRILLA (en su dataprovider imagino
+					// .. todo dinamico ... !!!!!!!!!!!!!!
+					
+					// ToDo ..
+					
+					var strCliente:String="";
+					var strDescriPedido:String="";
+					
+					if ( cmbEdades.selectedItem.label == "No es Cliente" ) {
+						strCliente=txtClienteCasual.text;
+					}else{
+						strCliente=cmbEdades.selectedItem.label;
+					}
+					
+					strDescriPedido=txtDescriPedido.text;
+					
+					//var newPedido:DgPedidosRegData = new DgPedidosRegData(strCliente,strDescriPedido);
+					var obj:Object = new Object();
+					
+					obj.cliente = strCliente;
+					obj.descripPedido = strDescriPedido;
+					
+					acDgPersonas.addItem(obj); //"cliente");// obj); //newPedido); //"cliente"); //DgPedidosRegData);
+					
+					//dgPendientes.dataProvider=acDgPersonas;
+					obj = null;
+
+				} 
+				catch(error:Error) 
+				{
+					trace(error.message);
+				}
+				
+			}
+			
+
+			/*20160805 private function LlenarCombo(e:Event):void{
+				
+			}
+			private function EliminarUsuario(e:Event):void
+			{
+				Alert.show("Eliminar Usuario!!!","AVISO DEL SISTEMA");
+				var abmUsuariosDTO_baja:ABMUsuariosDTO_baja = new ABMUsuariosDTO_baja (txtIdUsuario.text);
+				msPM.sendDeleteRequestMSG(Messages.USUARIOS_DELETE_MESSAGE,abmUsuariosDTO_baja);
+			}
+			private function ActualizarUsuario(e:Event):void
+			{
+				
+			} */
+			
+			/*20160805
+			public function cmbCliDataLoaded(event:Event):void {
+				try
+				{
+					if (( cmbEdades.setValue(msPM.cmbIndexCli.toString()) ) == false ) {
+						cmbEdades.setValue(EComboBox.NO_SELECTION_VALUE);
+					}
+				} 
+				catch(error:Error) 
+				{
+					trace(error.message);
+				}
+				
+			} */
+			public function loadCmbEdades_OK_handler():void {
+				try
+				{
+					this.cmbEdades.dataProvider=svcCmbEdades.lastResult.root.qry.item;
+				} 
+				catch(error:Error) 
+				{
+					trace(error.message);
+				}
+			}
+			public function loadCmbEdades_fault_handler():void {
+				
+				try
+				{
+					trace("error loadCmbEdades_fault_handler");
+				} 
+				catch(error:Error) 
+				{
+					trace(error.message);
+				}
+			}
+			
+			
+			private var myAlert:Alert;
+			
+			public function showAlert(	text:String,  title:String=null, flags:uint=mx.controls.Alert.OK,  parent:Sprite=null,  
+										clickListener:Function=null, iconClass:Class=null, defaultButton:uint=mx.controls.Alert.OK ): Alert { 
+				try {
+					myAlert=null;
+					myAlert = Alert.show(text,title,flags,parent,clickListener,iconClass,defaultButton);  
+					PopUpManager.centerPopUp(myAlert);
+					myAlert.x = 500; 
+					myAlert.y = 250;
+					
+				} 
+				catch(error:Error)  {
+					throw new Error();
+				}finally {
+					return myAlert;
+				}
+			}
+
+			
+			
+		]]>
+	</mx:Script>
+	<mx:HTTPService id="svcCmbEdades"
+					url="data/clientes.xml"
+					fault="loadCmbEdades_fault_handler()"
+					result="loadCmbEdades_OK_handler();"
+					/> 
+	<!-- UI .. --> 
+	
+	<components:ECanvas id="contenedor" width="1330" height="600">
+		<!-- 20161026 mx:Image x="520" source="modules/ABMUsuarios/DeliveryExpressLOGO.jpeg" width="40%" height="35%" --> <!-- x="680"  -->
+		<!-- mx:Image x="1" y="203" source="modules/ABMUsuarios/webLineSeparatorblue.png" width="500%" height="3%" -->
+		<!-- mx:Image x="1" y="1" source="modules/ABMUsuarios/Webbluebackground.jpg" width="200%" height="200%" -->
+		<!--userId-->
+		
+		<components:ELabel id="lblCmbCliente" x="5" y="35" width="150" fontWeight="bold"  
+						   text="Cliente" textAlign="right"/>
+		<components:EComboBox id="cmbEdades" x="170" y="35" width="210" height="23" focusEnabled="true" /> <!-- 20160805 --> 
+
+		
+		<components:ELabel id="lblClienteCasual" x="5" y="70" width="150" fontWeight="bold"
+						   text="Cliente Casual(nombre)" textAlign="right"/>
+		<components:ETextInput id="txtClienteCasual" x="170" y="70" width="210" text="{msPM.txtIdUsuario}"/>
+		
+		<!--username-->
+		<components:ELabel id="lblDescriPedido" x="5" y="105" width="150" fontWeight="bold"
+							text="Descripción Pedido" textAlign="right" />
+		<components:ETextInput id="txtDescriPedido" x="170" y="105" width="300" text="{msPM.txtUsuario}"/>
+		
+		<!-- components:EButton id="btnAgregarPedido" x="170" y="115" width="77" label="Agregar Pedido"  -->
+		<components:EButton id="btnAgregarPedido"  x="170" y="140" styleName="buttonCss" height="25" width="170" label="Agregar Pedido"/> <!-- graba pendientes y hechos en DB -->
+		
+		<mx:Image x="5" y="140" source="modules/ABMUsuarios/arrowDown.jpg" width="10%" height="10%"/>
+		
+		<!--20160805 clave
+		 components:ELabel id="lblClave" x="14" y="95" width="81" fontWeight="bold" text="Clave:"
+						   textAlign="right" 
+		 components:ETextInput id="txtClave" x="103" y="85" width="162" text="{msPM.txtClave}" -->
+		
+		
+		<!--20160805 components:ELabel id="lblIdUsuario0" x="14" y="140" width="81" fontWeight="bold"
+						   text="ID Cliente:" textAlign="right" -->
+		
+		
+		<!--20160805							  
+					autoComplete="true"
+					svcURL="{globalModelRef.servicios.clientes}" ___> NEW: 20160806 : seria GlobalModel.servicios.clientes (static class) 
+		-->
+
+		<!--20160805
+		 components:ELabel id="lblSector" x="14" y="167" width="81" fontWeight="bold"
+						   text="ID Sector:" textAlign="right" 
+		
+ 
+		 components:ELabel id="lblNombre" x="471" y="140" width="81" fontWeight="bold"
+						   text="Nombre:" textAlign="right" 
+		 components:ETextInput id="txtNombre" x="560" y="130" width="257" text="{msPM.txtNombre}" 
+		 components:ELabel id="lblApellido" x="471" y="167" width="81" fontWeight="bold"
+						   text="Apellido:" textAlign="right" 
+		 components:ETextInput id="txtApellido" x="560" y="157" width="257" text="{msPM.txtApellido}" 
+		 components:ELabel id="lblMail" x="474" y="192" width="81" fontWeight="bold"
+						   text="Mail:" textAlign="right" 
+		 components:ETextInput id="txtMail" x="560" y="182" width="257" text="{msPM.txtMail}" 
+		 components:ELabel id="lblActivado" x="474" y="221" width="81" fontWeight="bold"
+						   text="Activado:" textAlign="right" 
+		 components:EComboBox id="cmbActivado" x="561" y="210" width="121" height="23" 
+		 components:ELabel id="lblFecActivacion" x="441" y="251" width="111" fontWeight="bold"
+						   text="Fecha Activacion:" textAlign="right" 
+		 components:EDateField id="dtfActivacion" x="560" y="241" width="111" 
+							   formatString="DD/MM/YYYY" text="{msPM.dtfActivacion}"  
+		 components:ELabel id="lblDeshabilitado" x="473" y="282" width="81" fontWeight="bold"
+						   text="Deshabilitado:" textAlign="right" 
+		 components:EComboBox id="cmbDeshbilitado" x="560" y="270" width="122" height="23" 
+		 components:ELabel id="lblPINCMostrar" x="472" y="310" width="81" fontWeight="bold"
+						   text="PINC Mostrar:" textAlign="right" 
+		 components:EComboBox id="cmbPINCMostrar" x="559" y="299" width="123" height="23" 
+		 components:ELabel id="lblBatMymtec" x="472" y="339" width="81" fontWeight="bold"
+						   text="Bat MYMTEC:" textAlign="right" 
+		 components:ETextInput id="txtBatMymtec" x="558" y="329" width="257" text="{msPM.txtBatMymtec}" 
+		 components:ELabel id="lblUsuariored" x="472" y="369" width="81" fontWeight="bold"
+						   text="Usuario Red:" textAlign="right" 
+		 components:ETextInput id="txtUsuarioRed" x="558" y="358" width="257" text="{msPM.txtUsuarioRed}" 
+		 components:ELabel id="lblRecordatorios" x="452" y="400" width="99" fontWeight="bold"
+						   text="Recordatorios:&#xd;" textAlign="right" 
+		 components:EComboBox id="cmbRecordatorios" x="559" y="387" width="123" height="23" 
+		 components:ELabel id="lblAccesoBuzon" x="421" y="430" width="132" fontWeight="bold"
+						   text="Acceso a Buzon:" textAlign="right" 
+		 components:EComboBox id="cmbAccesoBuzon" x="559" y="418" width="123" height="23" 
+		 components:EButton id="btnCerrar" x="801" y="-28" width="31" label="X" 
+		 components:EButton id="btnBuscar" x="239" y="34" label="Buscar" 
+		
+		 20160805 -->
+		 
+		<!--20160805 components:ELinkButton id="lnkActualizar" width="77" label="Actualizar" -->
+		
+		
+		<!--20160805 METO UNA GRILLA (x ahora comun sin code impl ent con datasource xml o por xml o circuito o tag http service interno --> 
+		<components:ELabel x="5" y="215" text="PEDIDOS PENDIENTES" fontSize="14" fontFamily="century" textDecoration="underline" fontWeight="bold" color="#003300" />
+		<components:EDataGrid x="5" y="238" width="500" height="290" id="dgPendientes"
+							  editable="false"  dataProvider="{acDgPersonas}" dragMoveEnabled="true" dragEnabled="true" dropEnabled="true"> 
+			<!-- 20160828 dataProvider="{msPM.xmllcUsuarios}" --> <!-- !!!!! 2016 dgPedidosPendientes sería.. !!!!!! / --> 
+			
+			<components:columns>
+				<mx:DataGridColumn id="dgPendsCol1"
+								   dataField="cliente"
+								   headerText="Cliente"
+								   width="200" />
+				<mx:DataGridColumn id="dgPendsCol2"
+								   dataField="descripPedido"
+								   headerText="Descripción"
+								   width="200" />
+			</components:columns>			 
+			
+			</components:EDataGrid>
+		
+		<mx:Image x="470" y="535" source="modules/ABMUsuarios/arrowUp.png"  width="10%" height="10%"/>
+		
+		<components:ELabel x="510" y="215" text="PEDIDOS RESUELTOS (Drag &amp; Drop desde " fontSize="14" fontFamily="century" textDecoration="underline" fontWeight="bold" color="#330000" /> <!-- color="#071630" azul obscuro -->
+		<components:ELabel x="842" y="215" text="PENDIENTES)" fontSize="14" fontFamily="century" textDecoration="underline" fontWeight="bold" color="#003300" /> 
+		
+		<!--com 20161026 components:EDataGrid x="510" y="238" width="500" height="290" id="dgPedidosYaResueltos"
+							  editable="false"  dataProvider="{acDgResueltos}"  dragMoveEnabled="true" dragEnabled="true" dropEnabled="true" --> 
+			<!-- !!!!! 2016 dgPedidosYaResueltos sería.. !!!!!! / --> 
+			
+		<!--20161026 components:columns 
+				 mx:DataGridColumn id="dgResueltosCol1"
+								   dataField="cliente"
+								   headerText="Cliente"
+								   width="200" />
+				 mx:DataGridColumn id="dgResueltosCol2"
+								   dataField="descripPedido"
+								   headerText="Descripción"
+								   width="200"  
+			 components:columns 		 
+			
+		 components:EDataGrid 
+		fin-->
+		
+		<components:ELabel x="1015" y="215" text="CLIENTES" fontSize="14" fontFamily="century" textDecoration="underline" fontWeight="bold" color="#CD950C" />
+		<!--20161026 com components:EDataGrid x="1015" y="238" width="310" height="290" id="dgClientes"
+							  editable="false"  dataProvider="{msPM.xmllcUsuarios}" --> <!-- dgDatosClientes / --> 
+			
+			<!-- components:columns
+				 mx:DataGridColumn id="dgClientesCol1"
+								   dataField="@razonsocial"
+								   headerText="Razon Social"
+								   width="200"  
+				 mx:DataGridColumn id="dgClientesCol2"
+								   dataField="@direccion"
+								   headerText="Dirección"
+								   width="200"  
+				 mx:DataGridColumn id="dgClientesCol3"
+								   dataField="@telefono"
+								   headerText="Teléfono"
+								   width="200" 
+			 components:columns 			 
+			
+		  fin components:EDataGrid -->
+		
+		
+		
+		<components:EButton id="btnSaveTheDay"  x="5" y="535" styleName="buttonCss" height="40" width="170" label="Save The Day!"  /> <!-- graba pendientes y hechos en DB -->
+		<!-- mx:Image id="btnSaveTheDay"  x="5" y="535" source="modules/ABMUsuarios/SaveBlueButton.jpg"--> <!-- width="40%" height="35%" -->
+		
+		<!--20160805 components:ELinkButton id="lnkEliminar" label="Eliminar" -->
+		<!--20160805 components:ELinkButton id="lnkCerrar" width="66" label="Cerrar" -->
+		 
+		 
+		<!-- mx:ComboBox id="cmbClientex" top="89" width="213" dropdownWidth="150" horizontalCenter="-26"
+					 prompt="Please select an item..." selectedIndex="-1"
+			 mx:dataProvider 
+				 fx:Array 
+					 fx:Object label="Item 1"  
+					 fx:Object label="Item 2"  
+					 fx:Object label="Item 3"  
+					 fx:Object label="Item 4"  
+					 fx:Object label="Item 5"  
+					 fx:Object label="Item 6"  
+					 fx:Object label="Item 7"  
+					 fx:Object label="Item 8"  
+				  fx:Array 
+			 mx:dataProvider 
+		 	mx:ComboBox 
+		-->
+	</components:ECanvas>
+		
+	
+	
+	<!-- Validaciones ... -->
+	
+
+	
+</components:EPanel>

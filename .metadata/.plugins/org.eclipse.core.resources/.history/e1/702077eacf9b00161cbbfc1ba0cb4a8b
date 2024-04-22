@@ -1,0 +1,29 @@
+package Modules.ABMPersonas.Application.bussiness.Entities.DTOs
+{
+	public class ABMPersonasDTO_alta {
+		//private var	id:String;
+		private var	_nombre:String;
+		private var	apellido:String;
+		private var	edad:int;
+		
+		public function ABMPersonasDTO_alta(id:String, nombre:String, apellido:String, edad:int) {
+			//this.id=id;
+			this.nombre=nombre;
+			this.apellido=apellido;
+			this.edad=edad;
+		}
+
+		
+
+		public function get nombre():String
+		{
+			return _nombre;
+		}
+
+		public function set nombre(value:String):void
+		{
+			_nombre = value;
+		}
+
+	}
+}

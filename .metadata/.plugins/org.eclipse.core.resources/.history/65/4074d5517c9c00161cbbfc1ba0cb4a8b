@@ -1,0 +1,41 @@
+<root>
+	<reset>http://localhost/COPC_Svr/reset.jsp</reset>
+	<resetApp>http://localhost/COPC_Svr/resetApp.jsp</resetApp>
+	
+	<getParams>http://localhost/COPC_Svr/getParams.jsp</getParams>
+
+	<tareas>data/config_tareas.xml</tareas>
+	<dataSources>data/data_sources.xml</dataSources>
+
+	<userDataSources>http://localhost/COPC_Svr/wc.jsp</userDataSources>
+
+	<configConsulta>http://localhost/COPC_Svr/wc.jsp</configConsulta>
+	<XconfigConsulta>data/config_consulta.xml</XconfigConsulta>
+
+	<qrylist>http://localhost/COPC_Svr/wc.jsp</qrylist>
+	<Xqrylist>data/qrylist.xml</Xqrylist>
+
+	<consultaXML>http://localhost/COPC_Svr/wc.jsp</consultaXML>
+
+	<generico>http://localhost/COPC_Svr/wc.jsp</generico>
+	
+	<dominios>data/dominios.xml</dominios>
+	<edades>data/conf/edades.xml</edades>
+	<!-- personas data/conf/personas.xml personas .. CAMBIAR A HTTP:  ...&svc=getAllPers  o algo asi !!!!!!!!!!!!!!  -->
+	<sectores>data/conf/sectores.xml</sectores>
+
+	<getPers>http://localhost:8080/FMK-DynamicWEB/ServiceLocator?svc=selAllPers</getPers>
+	
+	<altaPers>http://localhost:8080/FMK-DynamicWEB/ServiceLocator?svc=insPers</altaPers>
+	<bajaPers>http://localhost:8080/FMK-DynamicWEB/ServiceLocator?svc=delPers</bajaPers>
+
+	<login>http://localhost:8080/FMK-DynamicWEB/ServiceLocator?svc=login</login>
+	
+	<!--  TODO: Sacar estos servicios corresp a un modulo indep interno al services de ese modulo
+		 		y hacer q cada mod initApp levante a su propio globalDomain su propio file de conf
+		 		y q las clases del mismo modulo (cmds etc ) la saquen de ahi (de su modelo propio)
+		 		xa no generar acoplamiento -->
+	
+	
+	
+</root>

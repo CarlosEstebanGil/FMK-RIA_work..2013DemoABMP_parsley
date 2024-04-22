@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<mx:AreaChart  
+			   
+			  xmlns:mx="http://www.adobe.com/2006/mxml">
+	
+			  <!-- 20160806-flex3 xmlns:mx="library://ns.adobe.com/flex/mx" 
+						    xmlns:fx="http://ns.adobe.com/mxml/2009" 
+	xmlns:s="library://ns.adobe.com/flex/spark"
+			-->
+	<!-- 20160806-flex3 	
+	fx:Declarations
+		 Place non-visual elements (e.g., services, value objects)  
+	fx:Declarations 
+	-->
+	
+	<!-- 20160806-flex3 HAGO LO MISMO EN TODOS LOS DEMÁS DE TODA LA APP Y LA APP PPAL --> 
+	
+</mx:AreaChart>

@@ -1,0 +1,302 @@
+<?xml version="1.0" encoding="utf-8"?>
+<mx:Application xmlns:mx="http://www.adobe.com/2006/mxml"
+			   creationComplete="onCreationComplete_handler(event)" 
+			   xmlns:view="application.view.*"
+			   height="1500" width="1400" 
+			   xmlns:ec="components.*"
+			   xmlns:model="domain.*" 
+			   initialize="onInitialize_handler(event)"
+			   autoLayout="false"
+			   x="1" y="1"
+			  > <!-- x="1" y="1" minHeight="1500" minWidth="1400" height="600" width="900" -->
+	<!-- 20160806-flex3
+	xmlns:fx="http://ns.adobe.com/mxml/2009" 
+	xmlns:s="library://ns.adobe.com/flex/spark" 
+	xmlns:mx="library://ns.adobe.com/flex/mx" 
+	-->
+
+	<!-- 20160806-flex3 fx:Declarations -->
+		<!-- Place non-visual elements (e.g., services, value objects) here -->
+		
+		
+	
+	<mx:HTTPService id="svcConfig"
+	url="data/conf/services.xml"
+	fault="services_configuration_fault_handler()"
+	result="setServices();"
+	/> <!-- 20160806-flex3 FALTABAn los parentesis al handler xa fault -->
+	
+	<!-- fx:Declarations -->
+	
+	<mx:Script>
+		<![CDATA[
+			import Modules.ABMPersonas.ABMPersonas;
+			
+			import application.domain.GlobalModel;
+			
+			import framework.components.Login.Application.messages.EFlexEvent;
+			import framework.components.Login.Login;
+			
+			import mx.collections.XMLListCollection;
+			import mx.controls.Alert;
+			import mx.events.FlexEvent;
+			import mx.events.ModuleEvent;
+			import mx.logging.LogEventLevel;
+			
+			/* 20160803
+			[Inject]
+			[Bindable]
+			public var model:GlobalModel;
+			*/
+			public static const CON_LOGIN:Boolean= true;//20160829 false; //true; //PRUEBA 20160825 !! false;
+			public static const DUMMY_LOCAL_SERVICES:Boolean= false; //20161027 true;
+			
+			public var login:Login; //20160825 ABMUsuarios; //Login; 
+			
+			public static const SERVICES_LOADED_OK:String = "SERVICES_LOADED_OK";
+			
+			protected function onCreationComplete_handler(event:FlexEvent):void { 	
+				//new 20140528 !! problemas de syncronizacion! se ejecuta 1ero el creation complete del comp login q la carga del servicio!.
+				//pruebo poniendolo en initialize.. 
+				//loadInitConf();
+				//20160803 lo invoco acá total la app vá con login = false ( si la quiero en true despues veo ) 
+				handleInit();
+			} 
+			
+			public function loginResultEvtHandlerWrapper(evt:Event):void {
+				trace("llegó");
+			}
+			
+			private function loadInitConf():void{
+				//load services configuration
+				if (DUMMY_LOCAL_SERVICES==true) {
+					svcConfig.url="data/conf/services_local.xml"
+				}
+				svcConfig.send();
+				
+				//load other confs.. 
+			}
+			
+			private function moduleInit():void {		
+			} 
+			
+			public function onMainContextComplete():void {
+			}
+			
+			public function moduloCargado(event:ModuleEvent):void { 
+				/*logTarget = new TraceTarget();
+				logTarget.level = LogEventLevel.ALL;*/
+			} 
+			
+			
+			public function handleInit():void {
+				//chota
+				//this.x=0;
+				//this.y=0;
+				
+				
+				addEventListener(SERVICES_LOADED_OK,servicesLoadedOK_handler);
+				loadInitConf(); //este [init] es el de parsley.. luego de cargar la conf es q se crea el comp login .. y ya estaria el model injected..
+				
+				//rest of initializations.. 
+			}
+			
+			private function servicesLoadedOK_handler(evt:Event):void {
+				
+				//20160803 IF CON_LOGIN .. En lo nuevo existe una clase EApplication del fmk xa esto, acá lo dejo en la app ppal todo ese esqueleto
+				
+				if (CON_LOGIN) {
+					//20160825 
+					//this.login = new ABMUsuarios; // 20160803 -> iria esto en realidad -> new Login(); //20160803 new ABMUsuarios; //deberia arrojar un evento y q un handler agregado x this.addEventListener xa ese msge
+					
+					//0) Creo la inst obj del login  
+					this.login = new framework.components.Login.Login;
+					
+					
+					//1) pasaje de params xa q trabaje (simil funcion)
+					login.loginUrl=GlobalModel.servicios.login; //20160825 -> Por ahora apunta a localhost:8080 (hacer local o ver )
+					
+					//2) Listeners
+					//20160825 this.addEventListener(LOGIN_DENIED_RESPONSE_MESSAGE, loginResultEvtHandlerWrapper);
+					/*this.addEventListener(LOGIN_DENIED_RESPONSE_MESSAGE,onLoginDeniedHandler);
+					this.addEventListener(LOGIN_GRANTED_RESPONSE_MESSAGE, onLoginGrantedHandler);
+					this.addEventListener(LOGIN_FAIL_RESPONSE_MESSAGE, onLoginFailHandler); */
+					login.addEventListener(LOGIN_DENIED_RESPONSE_MESSAGE,onLoginDeniedHandler);
+					login.addEventListener(LOGIN_GRANTED_RESPONSE_MESSAGE, onLoginGrantedHandler);
+					login.addEventListener(LOGIN_FAIL_RESPONSE_MESSAGE, onLoginFailHandler); 
+					
+					
+					//3) Respuesta del componente ( en evento en vez de "function return value" ) 
+					
+					//20160825 no le seteo la mainApp POR Q sino necesitaria usar una <<i>> intermedia para q el proy de la lib no 
+					//apunte a una clase de la app ppal.. así que x ahora no la paso y q comunique la data de resultado x msge en evento!
+					
+					//20160806-flex3 this.addElement(login);
+					
+					//20160827
+					login.x= 1; 	 
+					login.y= 1; 
+					//				// login.width= 1000; 
+					//				// login.height=740;  
+					//				// -- 
+					
+					addChild(login);
+				}else
+				{ 
+					
+					startApp();  //as
+				}	
+				/*login.width=1050; 
+				login.height=650;*/
+				
+				/*login.x= 36; 			// se encargue de instanciar y setear .. 
+				login.y= 143; 
+				login.width= 529; 
+				login.height=347; 
+				login.id="LoginComp"
+				
+				login.addEventListener(Messages.LOGIN_GRANTED_RESPONSE_MESSAGE, onLoginGrantedHandler);
+				login.addEventListener(Messages.LOGIN_DENIED_RESPONSE_MESSAGE, onLoginDeniedHandler);
+				login.addEventListener(Messages.LOGIN_FAIL_RESPONSE_MESSAGE, onLoginFailHandler);
+				*/
+				//20160805 this.addElement(login); 
+			} 
+			
+			public function startApp():void {
+				try {
+					
+					/*this.menuInicial = new MenuInicial();
+					*/
+					
+					executeApp(new ABMPersonas()); //20160803 MenuInicial());
+					//this.addElement(new ABMUsuarios()); 
+				} 
+				catch(error:Error)  {
+					throw new Error (error.message);
+				}
+			}
+			
+			//20160803 Si se complica esto entonces hacer this.addElement(abmusuarios) debajo del new todo directo en starApp y listo.
+			/* 20160806-flex3
+			public function executeApp(ive:IVisualElement):void{
+			try {
+			addElement(ive);	
+			} 
+			catch(error:Error)  {
+			throw new Error(error.message);
+			}
+			} */
+			
+			public function executeApp(dobj:DisplayObject):void{ //20160806-flex3 (ive:IVisualElement):void{
+				try {
+					//20160806-FLEX3 addElement(ive);
+					addChild(dobj)
+				} 
+				catch(error:Error)  {
+					throw new Error(error.message);
+				}
+			}
+			
+			
+			//svcConfig.onResult Handler :
+			public function setServices():void {
+				
+				try {
+					GlobalModel.servicios = svcConfig.lastResult.root;
+					
+					var pruServiciosContentForDebug:Object=GlobalModel.servicios; 
+					
+					
+					dispatchEvent(new FlexEvent(SERVICES_LOADED_OK)); // 20160803 FlexEvent(SERVICES_LOADED_OK));
+					
+					
+					/*this.login = new Login; //deberia arrojar un evento y q un handler agregado x this.addEventListener xa ese msge 
+					login.x= 36; 			// se encargue de instanciar y setear .. 
+					login.y= 143; 
+					login.width= 529; 
+					login.height=347; 
+					login.id="LoginComp"
+					
+					login.addEventListener(Messages.LOGIN_GRANTED_RESPONSE_MESSAGE, onLoginGrantedHandler);
+					login.addEventListener(Messages.LOGIN_DENIED_RESPONSE_MESSAGE, onLoginDeniedHandler);
+					login.addEventListener(Messages.LOGIN_FAIL_RESPONSE_MESSAGE, onLoginFailHandler);
+					
+					this.addElement(login);*/
+				} 
+				catch(error:Error) {
+					Alert.show(error.message);
+				}
+				finally{
+					
+				}
+				
+			}
+			
+			public function services_configuration_fault_handler(): void {
+				
+			}
+			
+			/*	los listeners van acá en la app modulo comp usuario/cliente... */
+			private function onInitialize_handler(e:Event):void {
+				//objeto.addEventListener(ClaseEvent.KteEvento, myEventHandlerFunc);
+				
+				//b1.addEventListener(MouseEvent.MouseEvent.CLICK, myEventHandler); //b1 era un textbox etc en el ejemplo de internet..
+				
+				//20140528 : taba bn xero no asegura q el modelo este injectado x parsley, xa eso mando esto en el [init] de parsley..
+				//loadInitConf(); //en realidad el handler onResult de la carga de conf ok deberia lanzar un evento y ahi recien debería
+				// instanciarse el componente login!!!
+				
+				//LoginComp.addEventListener(Messages.LOGIN_GRANTED_RESPONSE_MESSAGE, onLoginGrantedHandler);
+				
+				/* 20140528 lo tengo q meter en el [init] ahora tmb sino se ejecutaria antes de estar creado el obj login y tira null pointer
+				login.addEventListener(Messages.LOGIN_GRANTED_RESPONSE_MESSAGE, onLoginGrantedHandler);
+				login.addEventListener(Messages.LOGIN_DENIED_RESPONSE_MESSAGE, onLoginDeniedHandler);
+				login.addEventListener(Messages.LOGIN_FAIL_RESPONSE_MESSAGE, onLoginFailHandler);*/
+			}
+			
+			//20160825
+			private function onLoginGrantedHandler(evt:EFlexEvent):void {
+				removeChild(login);
+				startApp(); //20160825
+			}
+			
+			private function onLoginDeniedHandler(evt:EFlexEvent):void {
+				Alert.show("ACCESO DENEGADO"); //20160825 
+			}
+			
+			private function onLoginFailHandler(evt:EFlexEvent):void {
+				Alert.show("ERROR AL INTENTAR VALIDAR EL ACCESO, POR FAVOR INTENTE NUEVAMENTE");  //20160825
+			}
+		
+			//20160825
+			public static const LOGIN_GRANTED_RESPONSE_MESSAGE:String="LOGIN_GRANTED";
+			public static const LOGIN_DENIED_RESPONSE_MESSAGE:String="LOGIN_DENIED";
+			
+			public static const LOGIN_FAIL_RESPONSE_MESSAGE:String ="LOGIN_FAILED";
+
+		]]>
+	</mx:Script>
+	
+		 			
+			
+
+	
+
+	<!-- mx:ModuleLoader id="Login" url="Modules/Login/Login.swf" ready="moduleInit();" -->
+
+<!-- 20160803 saco todo esto 
+	
+	components:ELogo width="600" height="119" horizontalCenter="0" verticalCenter="-208" 
+	
+	
+ !-  ABMPers:ABMPersonas -   
+	 !- 20140528 lo hago syncronizado.. x q se ejecuta sino x ahi el creationComplete del comp login antes q la carga de los servicios! - 
+	
+	 !- Login:Login x="36" y="143" width="529" height="347" id="LoginComp" -
+	
+	 !- MainScreen prueba 20140422 - 
+	
+	components:ELabel id="lblTmpPruebas" x="36" y="504" width="363" height="24"
+					   text=" { 'User Logged In Status: ' +  String(model.loginResult) }" / 
+-->
+</mx:Application>

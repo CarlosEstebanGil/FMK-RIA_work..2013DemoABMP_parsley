@@ -1,0 +1,16 @@
+
+<root>
+<svc-summary action=" select " result="false" error="false" info=""/>
+<qry>
+<item rownum="1" label="José Fernando" 	data="1" 	id="1"  nombre="José Fernando" 	apellido="Perez" 		edad="44"/>
+<item rownum="2" label="Tomás" 			data="2" 	id="2"  nombre="Tomás" 			apellido="Edison" 		edad="60"/>
+<item rownum="3" label="Lionel" 		data="3" 	id="3"  nombre="Lionel" 		apellido="Messi" 		edad="25"/>
+<item rownum="4" label="Diego" 			data="4" 	id="4"  nombre="Diego" 			apellido="Maradona"		edad="55"/>
+<item rownum="5" label="robert" 		data="5" 	id="5"  nombre="robert" 		apellido="de niro" 		edad="62"/>
+<item rownum="6" label="homero" 		data="6" 	id="6"  nombre="homero" 		apellido="simpson" 		edad="36"/>
+<item rownum="7" label="milhouse" 		data="7" 	id="7"  nombre="milhouse" 		apellido="vanhouten" 	edad="10"/>
+<item rownum="8" label="moe" 			data="8" 	id="8"  nombre="moe" 			apellido="syslak" 		edad="38"/>
+<item rownum="9" label="lenny" 			data="9" 	id="9"  nombre="lenny" 			apellido="leonard" 		edad="36"/>
+<item rownum="10" label="ned" 			data="10" 	id="10" nombre="ned" 			apellido="flanders"		edad="50"/>
+</qry>
+</root> 

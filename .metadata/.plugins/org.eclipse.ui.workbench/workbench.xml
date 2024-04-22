@@ -1,0 +1,705 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<workbench progressCount="42" version="2.0">
+<workbenchAdvisor/>
+<window height="768" maximized="true" width="1024" x="150" y="0">
+<fastViewData fastViewLocation="1024"/>
+<perspectiveBar>
+<itemSize x="160"/>
+</perspectiveBar>
+<coolbarLayout>
+<coolItem id="group.file" itemType="typeGroupMarker"/>
+<coolItem id="org.eclipse.ui.workbench.file" itemType="typeToolBarContribution" x="163" y="22"/>
+<coolItem id="additions" itemType="typeGroupMarker"/>
+<coolItem id="org.eclipse.debug.ui.launchActionSet" itemType="typeToolBarContribution" x="201" y="22"/>
+<coolItem id="org.eclipse.search.searchActionSet" itemType="typeToolBarContribution" x="76" y="22"/>
+<coolItem id="org.eclipse.ui.edit.text.actionSet.presentation" itemType="typeToolBarContribution" x="85" y="22"/>
+<coolItem id="org.eclipse.wst.xml.ui.perspective.NewFileToolBar" itemType="typeToolBarContribution" x="-1" y="-1"/>
+<coolItem id="org.eclipse.wst.xml.ui.design.DesignToolBar" itemType="typeToolBarContribution" x="-1" y="-1"/>
+<coolItem id="group.nav" itemType="typeGroupMarker"/>
+<coolItem id="org.eclipse.ui.workbench.navigate" itemType="typeToolBarContribution" x="193" y="22"/>
+<coolItem id="group.editor" itemType="typeGroupMarker"/>
+<coolItem id="com.adobe.flexbuilder.editors.css.editors.CSSEditor" itemType="typeToolBarContribution" x="-1" y="-1"/>
+<coolItem id="org.eclipse.wst.xml.ui.internal.tabletree.XMLMultiPageEditorPart" itemType="typeToolBarContribution" x="-1" y="-1"/>
+<coolItem id="com.adobe.flexbuilder.editors.actionscript.ActionScriptEditor" itemType="typeToolBarContribution" x="-1" y="-1"/>
+<coolItem id="com.adobe.flexbuilder.editors.mxml.MXMLEditor" itemType="typeToolBarContribution" x="-1" y="-1"/>
+<coolItem id="group.help" itemType="typeGroupMarker"/>
+<coolItem id="org.eclipse.ui.workbench.help" itemType="typeToolBarContribution" x="-1" y="-1"/>
+</coolbarLayout>
+<page aggregateWorkingSetId="Aggregate for window 1470714482369" focus="true" label="Workspace - Flash">
+<editors>
+<editorArea activeWorkbook="DefaultEditorWorkbook">
+<info part="DefaultEditorWorkbook">
+<folder appearance="1" expanded="2">
+<presentation id="org.eclipse.ui.presentations.WorkbenchPresentationFactory">
+<part id="0"/>
+<part id="1"/>
+<part id="2"/>
+<part id="3"/>
+<part id="4"/>
+<part id="5"/>
+<part id="6"/>
+<part id="7"/>
+<part id="8"/>
+<part id="9"/>
+<part id="10"/>
+<part id="11"/>
+<part id="12"/>
+<part id="13"/>
+<part id="14"/>
+<part id="15"/>
+<part id="16"/>
+<part id="17"/>
+<part id="18"/>
+<part id="19"/>
+<part id="20"/>
+</presentation>
+</folder>
+</info>
+</editorArea>
+<editor id="com.adobe.flexbuilder.editors.mxml.MXMLEditor" name="Main.mxml" partName="Main.mxml" path="C:/Users/car/Downloads/!CasoJudicial/Frameworks-VERSIONADOS/Y___FMK-RIA_working/CurrDist_Template-Framework-APP_RIA/src/Main.mxml" title="Main.mxml" tooltip="CurrDist_Template-Framework-APP_RIA/src/Main.mxml" workbook="DefaultEditorWorkbook">
+<input factoryID="org.eclipse.ui.part.FileEditorInputFactory" path="/CurrDist_Template-Framework-APP_RIA/src/Main.mxml"/>
+</editor>
+<editor id="com.adobe.flexbuilder.editors.actionscript.ActionScriptEditor" name="LoginCommand.as" partName="LoginCommand.as" path="C:/Users/car/Downloads/!CasoJudicial/Frameworks-VERSIONADOS/Y___FMK-RIA_working/CurrDist-FMK_RIA_Working/src/framework/components/Login/Application/bussiness/commands/LoginCommand.as" title="LoginCommand.as" tooltip="CurrDist-FMK_RIA_Working/src/framework/components/Login/Application/bussiness/commands/LoginCommand.as" workbook="DefaultEditorWorkbook">
+<input factoryID="org.eclipse.ui.part.FileEditorInputFactory" path="/CurrDist-FMK_RIA_Working/src/framework/components/Login/Application/bussiness/commands/LoginCommand.as"/>
+<editorState selectionHorizontalPixel="0" selectionLength="0" selectionOffset="8812" selectionTopPixel="2700"/>
+</editor>
+<editor id="com.adobe.flexbuilder.editors.mxml.MXMLEditor" name="LoginConfig.mxml" partName="LoginConfig.mxml" path="C:/Users/car/Downloads/!CasoJudicial/Frameworks-VERSIONADOS/Y___FMK-RIA_working/CurrDist-FMK_RIA_Working/src/framework/components/Login/LoginConfig.mxml" title="LoginConfig.mxml" tooltip="CurrDist-FMK_RIA_Working/src/framework/components/Login/LoginConfig.mxml" workbook="DefaultEditorWorkbook">
+<input factoryID="org.eclipse.ui.part.FileEditorInputFactory" path="/CurrDist-FMK_RIA_Working/src/framework/components/Login/LoginConfig.mxml"/>
+</editor>
+<editor id="com.adobe.flexbuilder.editors.actionscript.ActionScriptEditor" name="GlobalModel.as" partName="GlobalModel.as" path="C:/Users/car/Downloads/!CasoJudicial/Frameworks-VERSIONADOS/Y___FMK-RIA_working/CurrDist_Template-Framework-APP_RIA/src/application/domain/GlobalModel.as" title="GlobalModel.as" tooltip="CurrDist_Template-Framework-APP_RIA/src/application/domain/GlobalModel.as" workbook="DefaultEditorWorkbook">
+<input factoryID="org.eclipse.ui.part.FileEditorInputFactory" path="/CurrDist_Template-Framework-APP_RIA/src/application/domain/GlobalModel.as"/>
+<editorState selectionHorizontalPixel="0" selectionLength="9" selectionOffset="402" selectionTopPixel="0"/>
+</editor>
+<editor id="com.adobe.flexbuilder.editors.actionscript.ActionScriptEditor" name="Messages.as" partName="Messages.as" path="C:/Users/car/Downloads/!CasoJudicial/Frameworks-VERSIONADOS/Y___FMK-RIA_working/CurrDist-FMK_RIA_Working/src/framework/components/Login/data/conf/Messages.as" title="Messages.as" tooltip="CurrDist-FMK_RIA_Working/src/framework/components/Login/data/conf/Messages.as" workbook="DefaultEditorWorkbook">
+<input factoryID="org.eclipse.ui.part.FileEditorInputFactory" path="/CurrDist-FMK_RIA_Working/src/framework/components/Login/data/conf/Messages.as"/>
+<editorState selectionHorizontalPixel="0" selectionLength="0" selectionOffset="669" selectionTopPixel="0"/>
+</editor>
+<editor id="com.adobe.flexbuilder.editors.actionscript.ActionScriptEditor" name="ABMPersonasCommand.as" partName="ABMPersonasCommand.as" path="C:/Users/car/Downloads/!CasoJudicial/Frameworks-VERSIONADOS/Y___FMK-RIA_working/CurrDist_Template-Framework-APP_RIA/src/Modules/ABMPersonas/Application/bussiness/commands/ABMPersonasCommand.as" title="ABMPersonasCommand.as" tooltip="CurrDist_Template-Framework-APP_RIA/src/Modules/ABMPersonas/Application/bussiness/commands/ABMPersonasCommand.as" workbook="DefaultEditorWorkbook">
+<input factoryID="org.eclipse.ui.part.FileEditorInputFactory" path="/CurrDist_Template-Framework-APP_RIA/src/Modules/ABMPersonas/Application/bussiness/commands/ABMPersonasCommand.as"/>
+<editorState selectionHorizontalPixel="0" selectionLength="0" selectionOffset="0" selectionTopPixel="0"/>
+</editor>
+<editor id="com.adobe.flexbuilder.editors.actionscript.ActionScriptEditor" name="ABMUsuariosCommand.as" partName="ABMUsuariosCommand.as" path="C:/Users/car/Downloads/!CasoJudicial/Frameworks-VERSIONADOS/Y___FMK-RIA_working/CurrDist_Template-Framework-APP_RIA/src/Modules/ABMUsuarios/Application/bussiness/commands/ABMUsuariosCommand.as" title="ABMUsuariosCommand.as" tooltip="CurrDist_Template-Framework-APP_RIA/src/Modules/ABMUsuarios/Application/bussiness/commands/ABMUsuariosCommand.as" workbook="DefaultEditorWorkbook">
+<input factoryID="org.eclipse.ui.part.FileEditorInputFactory" path="/CurrDist_Template-Framework-APP_RIA/src/Modules/ABMUsuarios/Application/bussiness/commands/ABMUsuariosCommand.as"/>
+<editorState selectionHorizontalPixel="0" selectionLength="6" selectionOffset="4264" selectionTopPixel="1305"/>
+</editor>
+<editor id="com.adobe.flexbuilder.editors.css.editors.CSSEditor" name="buttonCss.css" partName="buttonCss.css" path="C:/Users/car/Downloads/!CasoJudicial/Frameworks-VERSIONADOS/Y___FMK-RIA_working/CurrDist_Template-Framework-APP_RIA/src/Modules/ABMUsuarios/buttonCss.css" title="buttonCss.css" tooltip="CurrDist_Template-Framework-APP_RIA/src/Modules/ABMUsuarios/buttonCss.css" workbook="DefaultEditorWorkbook">
+<input factoryID="org.eclipse.ui.part.FileEditorInputFactory" path="/CurrDist_Template-Framework-APP_RIA/src/Modules/ABMUsuarios/buttonCss.css"/>
+</editor>
+<editor id="com.adobe.flexbuilder.editors.actionscript.ActionScriptEditor" name="EService.as" partName="EService.as" path="C:/Users/car/Downloads/!CasoJudicial/Frameworks-VERSIONADOS/Y___FMK-RIA_working/CurrDist-FMK_RIA_Working/src/framework/EService.as" title="EService.as" tooltip="CurrDist-FMK_RIA_Working/src/framework/EService.as" workbook="DefaultEditorWorkbook">
+<input factoryID="org.eclipse.ui.part.FileEditorInputFactory" path="/CurrDist-FMK_RIA_Working/src/framework/EService.as"/>
+<editorState selectionHorizontalPixel="0" selectionLength="0" selectionOffset="2203" selectionTopPixel="900"/>
+</editor>
+<editor id="com.adobe.flexbuilder.editors.actionscript.ActionScriptEditor" name="IService.as" partName="IService.as" path="C:/Users/car/Downloads/!CasoJudicial/Frameworks-VERSIONADOS/Y___FMK-RIA_working/CurrDist-FMK_RIA_Working/src/framework/IService.as" title="IService.as" tooltip="CurrDist-FMK_RIA_Working/src/framework/IService.as" workbook="DefaultEditorWorkbook">
+<input factoryID="org.eclipse.ui.part.FileEditorInputFactory" path="/CurrDist-FMK_RIA_Working/src/framework/IService.as"/>
+<editorState selectionHorizontalPixel="0" selectionLength="0" selectionOffset="621" selectionTopPixel="0"/>
+</editor>
+<editor id="com.adobe.flexbuilder.editors.mxml.MXMLEditor" name="ABMPersonas.mxml" partName="ABMPersonas.mxml" path="C:/Users/car/Downloads/!CasoJudicial/Frameworks-VERSIONADOS/Y___FMK-RIA_working/CurrDist_Template-Framework-APP_RIA/src/Modules/ABMPersonas/ABMPersonas.mxml" title="ABMPersonas.mxml" tooltip="CurrDist_Template-Framework-APP_RIA/src/Modules/ABMPersonas/ABMPersonas.mxml" workbook="DefaultEditorWorkbook">
+<input factoryID="org.eclipse.ui.part.FileEditorInputFactory" path="/CurrDist_Template-Framework-APP_RIA/src/Modules/ABMPersonas/ABMPersonas.mxml"/>
+</editor>
+<editor id="com.adobe.flexbuilder.editors.actionscript.ActionScriptEditor" name="EService.as" partName="EService.as" path="C:/Users/car/Downloads/!CasoJudicial/Frameworks-VERSIONADOS/Y___FMK-RIA_working/CurrDist-FMK_RIA_Working/src/framework/EService.as" title="EService.as" tooltip="CurrDist-FMK_RIA_Working/src/framework/EService.as" workbook="DefaultEditorWorkbook">
+<input factoryID="org.eclipse.ui.part.FileEditorInputFactory" path="/CurrDist-FMK_RIA_Working/src/framework/EService.as"/>
+<editorState selectionHorizontalPixel="0" selectionLength="0" selectionOffset="462" selectionTopPixel="105"/>
+</editor>
+<editor id="org.eclipse.wst.xml.ui.internal.tabletree.XMLMultiPageEditorPart" name="personas.xml" partName="personas.xml" path="C:/Users/car/Downloads/!CasoJudicial/Frameworks-VERSIONADOS/Y___FMK-RIA_working/CurrDist_Template-Framework-APP_RIA/src/data/conf/personas.xml" title="personas.xml" tooltip="CurrDist_Template-Framework-APP_RIA/src/data/conf/personas.xml" workbook="DefaultEditorWorkbook">
+<input factoryID="org.eclipse.ui.part.FileEditorInputFactory" path="/CurrDist_Template-Framework-APP_RIA/src/data/conf/personas.xml"/>
+</editor>
+<editor id="com.adobe.flexbuilder.editors.actionscript.ActionScriptEditor" name="ABMPersonasDTO_consulta.as" partName="ABMPersonasDTO_consulta.as" path="C:/Users/car/Downloads/!CasoJudicial/Frameworks-VERSIONADOS/Y___FMK-RIA_working/CurrDist_Template-Framework-APP_RIA/src/Modules/ABMPersonas/Application/bussiness/Entities/DTOs/ABMPersonasDTO_consulta.as" title="ABMPersonasDTO_consulta.as" tooltip="CurrDist_Template-Framework-APP_RIA/src/Modules/ABMPersonas/Application/bussiness/Entities/DTOs/ABMPersonasDTO_consulta.as" workbook="DefaultEditorWorkbook">
+<input factoryID="org.eclipse.ui.part.FileEditorInputFactory" path="/CurrDist_Template-Framework-APP_RIA/src/Modules/ABMPersonas/Application/bussiness/Entities/DTOs/ABMPersonasDTO_consulta.as"/>
+<editorState selectionHorizontalPixel="0" selectionLength="23" selectionOffset="82" selectionTopPixel="0"/>
+</editor>
+<editor id="com.adobe.flexbuilder.editors.actionscript.ActionScriptEditor" name="ABMPersonasDTO_alta.as" partName="ABMPersonasDTO_alta.as" path="C:/Users/car/Downloads/!CasoJudicial/Frameworks-VERSIONADOS/Y___FMK-RIA_working/CurrDist_Template-Framework-APP_RIA/src/Modules/ABMPersonas/Application/bussiness/Entities/DTOs/ABMPersonasDTO_alta.as" title="ABMPersonasDTO_alta.as" tooltip="CurrDist_Template-Framework-APP_RIA/src/Modules/ABMPersonas/Application/bussiness/Entities/DTOs/ABMPersonasDTO_alta.as" workbook="DefaultEditorWorkbook">
+<input factoryID="org.eclipse.ui.part.FileEditorInputFactory" path="/CurrDist_Template-Framework-APP_RIA/src/Modules/ABMPersonas/Application/bussiness/Entities/DTOs/ABMPersonasDTO_alta.as"/>
+<editorState selectionHorizontalPixel="0" selectionLength="19" selectionOffset="82" selectionTopPixel="0"/>
+</editor>
+<editor id="org.eclipse.wst.xml.ui.internal.tabletree.XMLMultiPageEditorPart" name="services_local.xml" partName="services_local.xml" path="C:/Users/car/Downloads/!CasoJudicial/Frameworks-VERSIONADOS/Y___FMK-RIA_working/CurrDist_Template-Framework-APP_RIA/src/data/conf/services_local.xml" title="services_local.xml" tooltip="CurrDist_Template-Framework-APP_RIA/src/data/conf/services_local.xml" workbook="DefaultEditorWorkbook">
+<input factoryID="org.eclipse.ui.part.FileEditorInputFactory" path="/CurrDist_Template-Framework-APP_RIA/src/data/conf/services_local.xml"/>
+</editor>
+<editor id="com.adobe.flexbuilder.editors.actionscript.ActionScriptEditor" name="Messages.as" partName="Messages.as" path="C:/Users/car/Downloads/!CasoJudicial/Frameworks-VERSIONADOS/Y___FMK-RIA_working/CurrDist_Template-Framework-APP_RIA/src/Modules/ABMPersonas/data/conf/Messages.as" title="Messages.as" tooltip="CurrDist_Template-Framework-APP_RIA/src/Modules/ABMPersonas/data/conf/Messages.as" workbook="DefaultEditorWorkbook">
+<input factoryID="org.eclipse.ui.part.FileEditorInputFactory" path="/CurrDist_Template-Framework-APP_RIA/src/Modules/ABMPersonas/data/conf/Messages.as"/>
+<editorState selectionHorizontalPixel="0" selectionLength="0" selectionOffset="212" selectionTopPixel="0"/>
+</editor>
+<editor id="org.eclipse.wst.xml.ui.internal.tabletree.XMLMultiPageEditorPart" name="services.xml" partName="services.xml" path="C:/Users/car/Downloads/!CasoJudicial/Frameworks-VERSIONADOS/Y___FMK-RIA_working/CurrDist_Template-Framework-APP_RIA/src/data/conf/services.xml" title="services.xml" tooltip="CurrDist_Template-Framework-APP_RIA/src/data/conf/services.xml" workbook="DefaultEditorWorkbook">
+<input factoryID="org.eclipse.ui.part.FileEditorInputFactory" path="/CurrDist_Template-Framework-APP_RIA/src/data/conf/services.xml"/>
+</editor>
+<editor activePart="true" focus="true" id="com.adobe.flexbuilder.editors.mxml.MXMLEditor" name="MainScreen.mxml" partName="MainScreen.mxml" path="C:/Users/car/Downloads/!CasoJudicial/Frameworks-VERSIONADOS/Y___FMK-RIA_working/CurrDist_Template-Framework-APP_RIA/src/Modules/ABMPersonas/Application/view/MainScreen.mxml" title="MainScreen.mxml" tooltip="CurrDist_Template-Framework-APP_RIA/src/Modules/ABMPersonas/Application/view/MainScreen.mxml" workbook="DefaultEditorWorkbook">
+<input factoryID="org.eclipse.ui.part.FileEditorInputFactory" path="/CurrDist_Template-Framework-APP_RIA/src/Modules/ABMPersonas/Application/view/MainScreen.mxml"/>
+</editor>
+<editor id="com.adobe.flexbuilder.editors.actionscript.ActionScriptEditor" name="MainScreenModel.as" partName="MainScreenModel.as" path="C:/Users/car/Downloads/!CasoJudicial/Frameworks-VERSIONADOS/Y___FMK-RIA_working/CurrDist_Template-Framework-APP_RIA/src/Modules/ABMPersonas/Application/presentationModel/MainScreenModel.as" title="MainScreenModel.as" tooltip="CurrDist_Template-Framework-APP_RIA/src/Modules/ABMPersonas/Application/presentationModel/MainScreenModel.as" workbook="DefaultEditorWorkbook">
+<input factoryID="org.eclipse.ui.part.FileEditorInputFactory" path="/CurrDist_Template-Framework-APP_RIA/src/Modules/ABMPersonas/Application/presentationModel/MainScreenModel.as"/>
+<editorState selectionHorizontalPixel="0" selectionLength="0" selectionOffset="5111" selectionTopPixel="2521"/>
+</editor>
+<editor id="com.adobe.flexbuilder.editors.actionscript.ActionScriptEditor" name="ECommand_ABM.as" partName="ECommand_ABM.as" path="C:/Users/car/Downloads/!CasoJudicial/Frameworks-VERSIONADOS/Y___FMK-RIA_working/CurrDist-FMK_RIA_Working/src/framework/ECommand_ABM.as" title="ECommand_ABM.as" tooltip="CurrDist-FMK_RIA_Working/src/framework/ECommand_ABM.as" workbook="DefaultEditorWorkbook">
+<input factoryID="org.eclipse.ui.part.FileEditorInputFactory" path="/CurrDist-FMK_RIA_Working/src/framework/ECommand_ABM.as"/>
+<editorState selectionHorizontalPixel="0" selectionLength="0" selectionOffset="886" selectionTopPixel="405"/>
+</editor>
+</editors>
+<views>
+<view id="org.eclipse.debug.ui.ExpressionView" partName="Expressions">
+<viewState/>
+</view>
+<view id="org.eclipse.search.ui.views.SearchView" partName="Search">
+<viewState isPinned="false">
+<view IMemento.internal.id="com.adobe.flexbuilder.as.editors.searchpage" org.eclipse.search.lastActivation="2" org.eclipse.search.resultpage.layout="2"/>
+<view IMemento.internal.id="" org.eclipse.search.lastActivation="0"/>
+<view IMemento.internal.id="org.eclipse.search.text.FileSearchResultPage" org.eclipse.search.lastActivation="3" org.eclipse.search.resultpage.layout="2" org.eclipse.search.resultpage.limit="1000" org.eclipse.search.resultpage.sorting="2"/>
+</viewState>
+</view>
+<view id="org.eclipse.debug.ui.DebugView" partName="Debug">
+<viewState/>
+</view>
+<view id="org.eclipse.ui.views.ProblemView" partName="Problems">
+<viewState PRIMARY_SORT_FIELD="org.eclipse.ui.ide.severityAndDescriptionField" categoryGroup="org.eclipse.ui.ide.severity" markerContentGenerator="org.eclipse.ui.ide.problemsGenerator" partName="Problems">
+<expanded>
+<category IMemento.internal.id="Warnings (4 items)"/>
+</expanded>
+<columnWidths org.eclipse.ui.ide.locationField="90" org.eclipse.ui.ide.markerType="90" org.eclipse.ui.ide.pathField="164" org.eclipse.ui.ide.resourceField="90" org.eclipse.ui.ide.severityAndDescriptionField="662"/>
+<visible IMemento.internal.id="org.eclipse.ui.ide.severityAndDescriptionField"/>
+<visible IMemento.internal.id="org.eclipse.ui.ide.resourceField"/>
+<visible IMemento.internal.id="org.eclipse.ui.ide.pathField"/>
+<visible IMemento.internal.id="org.eclipse.ui.ide.locationField"/>
+<visible IMemento.internal.id="org.eclipse.ui.ide.markerType"/>
+</viewState>
+</view>
+<view id="org.eclipse.ui.console.ConsoleView" partName="Console">
+<viewState/>
+</view>
+<view id="com.adobe.flexbuilder.packageexplorer" partName="Package Explorer">
+<viewState LINK_NAVIGATOR_TO_EDITOR="0" fpeIsFlat="0" fpeSortBy="1" sorter="1">
+<fpeExpanded>
+<fpeElement fpePath="/CurrDist_Template-Framework-APP_RIA"/>
+<fpeElement fpePath="/CurrDist_Template-Framework-APP_RIA/src"/>
+<fpeElement fpePath="/CurrDist_Template-Framework-APP_RIA/src/%typeDefaultPackage"/>
+<fpeElement fpePath="/CurrDist_Template-Framework-APP_RIA/src/Modules"/>
+<fpeElement fpePath="/CurrDist_Template-Framework-APP_RIA/src/Modules/ABMPersonas"/>
+<fpeElement fpePath="/CurrDist_Template-Framework-APP_RIA/src/Modules/ABMPersonas/Application"/>
+<fpeElement fpePath="/CurrDist_Template-Framework-APP_RIA/src/Modules/ABMPersonas/Application/bussiness"/>
+<fpeElement fpePath="/CurrDist_Template-Framework-APP_RIA/src/Modules/ABMPersonas/Application/bussiness/commands"/>
+<fpeElement fpePath="/CurrDist_Template-Framework-APP_RIA/src/Modules/ABMPersonas/Application/view"/>
+<fpeElement fpePath="/CurrDist_Template-Framework-APP_RIA/src/Modules/ABMPersonas/data"/>
+</fpeExpanded>
+<fpeSelection>
+<fpeElement fpePath="/CurrDist_Template-Framework-APP_RIA/src/Modules/ABMPersonas/Application/view/MainScreen.mxml"/>
+</fpeSelection>
+<filters>
+<filter element=".flexProperties" isEnabled="true"/>
+<filter element=".actionScriptProperties" isEnabled="true"/>
+<filter element=".project" isEnabled="true"/>
+<filter element=".settings" isEnabled="true"/>
+<filter element=".flexLibProperties" isEnabled="true"/>
+<filter element=".DS_Store" isEnabled="true"/>
+<filter element=".model" isEnabled="true"/>
+<filter element="*.class" isEnabled="false"/>
+<filter element=".*" isEnabled="false"/>
+<filter element=".flexProperties" isEnabled="true"/>
+<filter element=".actionScriptProperties" isEnabled="true"/>
+<filter element=".project" isEnabled="true"/>
+<filter element=".settings" isEnabled="true"/>
+<filter element=".flexLibProperties" isEnabled="true"/>
+<filter element=".DS_Store" isEnabled="true"/>
+<filter element=".model" isEnabled="true"/>
+<filter element="*.class" isEnabled="false"/>
+<filter element=".*" isEnabled="false"/>
+</filters>
+<expanded>
+<element path="/CurrDist_Template-Framework-APP_RIA"/>
+</expanded>
+<selection>
+<element path="/CurrDist_Template-Framework-APP_RIA/src/Modules/ABMPersonas/Application/view/MainScreen.mxml"/>
+</selection>
+</viewState>
+</view>
+<view id="org.eclipse.debug.ui.BreakpointView" partName="Breakpoints"/>
+<view id="org.eclipse.debug.ui.VariableView" partName="Variables">
+<viewState/>
+</view>
+<view id="com.adobe.flexbuilder.monitors.network.view.NetworkMonitorView" partName="Network Monitor">
+<viewState/>
+</view>
+<view id="com.adobe.flexbuilder.dcrad.views.DataServicesView" partName="Data/Services">
+<viewState/>
+</view>
+<view id="org.eclipse.ui.views.ContentOutline" partName="Outline">
+<viewState/>
+</view>
+<view id="com.adobe.flexbuilder.as.editor.asdocviewer" partName="ASDoc">
+<viewState/>
+</view>
+</views>
+<perspectives activePart="com.adobe.flexbuilder.editors.mxml.MXMLEditor" activePerspective="com.adobe.flexbuilder.editors.mxml.ui.perspectives.development">
+<perspective editorAreaTrimState="2" editorAreaVisible="1" fixed="0" version="0.016">
+<descriptor class="com.adobe.flexbuilder.mxml.editor.ui.perspectives.DevelopmentPerspectiveFactory" id="com.adobe.flexbuilder.editors.mxml.ui.perspectives.development" label="Flash"/>
+<alwaysOnActionSet id="com.adobe.flexbuilder.editorcore.modeswitch"/>
+<alwaysOnActionSet id="com.adobe.flexbuilder.flashbridge.flashproject.actionSet"/>
+<alwaysOnActionSet id="com.adobe.flexbuilder.designview.activationcontrol"/>
+<alwaysOnActionSet id="org.eclipse.mylyn.context.ui.actionSet"/>
+<alwaysOnActionSet id="org.eclipse.mylyn.doc.actionSet"/>
+<alwaysOnActionSet id="org.eclipse.mylyn.tasks.ui.navigation"/>
+<alwaysOnActionSet id="org.eclipse.ui.cheatsheets.actionSet"/>
+<alwaysOnActionSet id="org.eclipse.search.searchActionSet"/>
+<alwaysOnActionSet id="org.eclipse.ui.edit.text.actionSet.annotationNavigation"/>
+<alwaysOnActionSet id="org.eclipse.ui.edit.text.actionSet.navigation"/>
+<alwaysOnActionSet id="org.eclipse.ui.edit.text.actionSet.convertLineDelimitersTo"/>
+<alwaysOnActionSet id="org.eclipse.ui.externaltools.ExternalToolsSet"/>
+<alwaysOnActionSet id="org.eclipse.ui.actionSet.keyBindings"/>
+<alwaysOnActionSet id="org.eclipse.ui.actionSet.openFiles"/>
+<alwaysOnActionSet id="org.eclipse.wb.core.ui.actionset"/>
+<alwaysOnActionSet id="org.eclipse.debug.ui.launchActionSet"/>
+<alwaysOnActionSet id="org.eclipse.debug.ui.profileActionSet"/>
+<alwaysOnActionSet id="org.eclipse.ui.NavigateActionSet"/>
+<alwaysOnActionSet id="org.eclipse.debug.ui.debugActionSet"/>
+<alwaysOnActionSet id="org.eclipse.debug.ui.breakpointActionSet"/>
+<alwaysOnActionSet id="com.adobe.flexbuilder.debug.ui.flexDebuggingActionSet"/>
+<alwaysOnActionSet id="com.adobe.flexbuilder.zzz.editors.common.ui.project.publish"/>
+<alwaysOnActionSet id="com.adobe.flexbuilder.exportimport.actionSet1"/>
+<alwaysOnActionSet id="com.adobe.flexbuilder.as.editor.ui.NavigationActions"/>
+<alwaysOnActionSet id="com.adobe.flexbuilder.dcrad.actionSet"/>
+<show_view_action id="com.adobe.flexbuilder.mxml.editor.AppearanceView"/>
+<show_view_action id="com.adobe.flexbuilder.mxml.editor.components.ComponentsView"/>
+<show_view_action id="com.adobe.flexbuilder.packageexplorer"/>
+<show_view_action id="org.eclipse.ui.views.ContentOutline"/>
+<show_view_action id="org.eclipse.ui.views.ProblemView"/>
+<show_view_action id="com.adobe.flexbuilder.mxml.editor.inspector.view.PropertiesView"/>
+<show_view_action id="com.adobe.flexbuilder.mxml.editor.states.StatesViewer"/>
+<show_view_action id="com.adobe.flexbuilder.dcrad.views.DataServicesView"/>
+<new_wizard_action id="com.adobe.flexbuilder.editorcore.ui.project.wizards.newproject"/>
+<new_wizard_action id="com.adobe.flexbuilder.project.ui.wizards.FlexLibraryProjectWizard"/>
+<new_wizard_action id="com.adobe.flashbuilder.project.multiplatform.ui.MultiPlatformProjectWizard"/>
+<new_wizard_action id="com.adobe.flexbuilder.project.ui.wizards.NewActionScriptProjectWizard"/>
+<new_wizard_action id="com.adobe.flashbuilder.project.multiplatform.ui.MultiPlatformActionScriptProjectWizard"/>
+<new_wizard_action id="com.adobe.flexbuilder.flashbridge.NewFlashProProjectWizard"/>
+<new_wizard_action id="com.adobe.flexbuilder.editorcore.ui.project.wizards.newflashcatalystproject"/>
+<new_wizard_action id="com.adobe.flexbuilder.mxml.editor.ui.wizards.NewMXMLApplication"/>
+<new_wizard_action id="com.adobe.flexbuilder.mxml.editor.ui.wizards.NewMXMLComponent"/>
+<new_wizard_action id="com.adobe.flexbuilder.mxml.editor.ui.wizards.NewMXMLItemRenderer"/>
+<new_wizard_action id="com.adobe.flexbuilder.mxml.editor.ui.wizards.NewMXMLModule"/>
+<new_wizard_action id="com.adobe.flexbuilder.mxml.editor.ui.wizards.NewMXMLSkin"/>
+<new_wizard_action id="com.adobe.flexbuilder.as.editor.wizards.NewActionScriptFile.flex"/>
+<new_wizard_action id="com.adobe.flexbuilder.as.editor.classWizard.flex"/>
+<new_wizard_action id="com.adobe.flexbuilder.as.editor.interfaceWizard.flex"/>
+<new_wizard_action id="com.adobe.flexbuilder.as.editor.skinnableComponentWizard.flex"/>
+<new_wizard_action id="com.adobe.flexbuilder.css.editor.wizards.NewCSSFile"/>
+<new_wizard_action id="com.adobe.flexbuilder.as.editor.flexUnitClassWizard.flex"/>
+<new_wizard_action id="com.adobe.flexbuilder.as.editor.flexUnitTestSuiteClassWizard.flex"/>
+<new_wizard_action id="com.adobe.flexbuilder.as.editor.packageWizard.flex"/>
+<new_wizard_action id="org.eclipse.ui.wizards.new.folder"/>
+<new_wizard_action id="org.eclipse.ui.wizards.new.file"/>
+<perspective_action id="com.adobe.flexbuilder.editors.mxml.ui.perspectives.development"/>
+<perspective_action id="com.adobe.flexbuilder.debug.ui.perspectives.debug"/>
+<perspective_action id="com.adobe.flash.profiler.ui.ProfilingPerspective"/>
+<hide_toolbar_item_id id="org.eclipse.jdt.ui.actions.OpenProjectWizard"/>
+<hide_toolbar_item_id id="org.eclipse.ui.edit.text.toggleShowSelectedElementOnly"/>
+<view id="com.adobe.flexbuilder.packageexplorer"/>
+<view id="org.eclipse.ui.views.ContentOutline"/>
+<view id="org.eclipse.ui.views.ProblemView"/>
+<view id="com.adobe.flexbuilder.dcrad.views.DataServicesView"/>
+<view id="com.adobe.flexbuilder.monitors.network.view.NetworkMonitorView"/>
+<view id="org.eclipse.ui.console.ConsoleView"/>
+<view id="org.eclipse.search.ui.views.SearchView"/>
+<view id="com.adobe.flexbuilder.as.editor.asdocviewer"/>
+<fastViewBars/>
+<layout>
+<mainWindow>
+<info folder="true" part="org.eclipse.ui.internal.ViewStack@1858df1">
+<folder activePageID="com.adobe.flexbuilder.packageexplorer" appearance="2" expanded="2">
+<page content="com.adobe.flexbuilder.packageexplorer" label="Package Explorer"/>
+<presentation id="org.eclipse.ui.presentations.WorkbenchPresentationFactory">
+<part id="0"/>
+</presentation>
+</folder>
+</info>
+<info folder="true" part="stickyFolderRight" ratio="0.7496318" ratioLeft="1018" ratioRight="340" relationship="2" relative="org.eclipse.ui.internal.ViewStack@1858df1">
+<folder appearance="2" expanded="2">
+<page content="org.eclipse.help.ui.HelpView" label="LabelNotFound"/>
+<page content="org.eclipse.ui.internal.introview" label="LabelNotFound"/>
+<page content="org.eclipse.ui.cheatsheets.views.CheatSheetView" label="LabelNotFound"/>
+<presentation id="org.eclipse.ui.presentations.WorkbenchPresentationFactory"/>
+</folder>
+</info>
+<info part="org.eclipse.ui.editorss" ratio="0.2701107" ratioLeft="366" ratioRight="989" relationship="2" relative="org.eclipse.ui.internal.ViewStack@1858df1"/>
+<info folder="true" part="statesViewHolder" ratio="0.649494" ratioLeft="706" ratioRight="381" relationship="2" relative="org.eclipse.ui.editorss">
+<folder appearance="2" expanded="2">
+<page content="com.adobe.flexbuilder.mxml.editor.states.StatesViewer" label="LabelNotFound"/>
+</folder>
+</info>
+<info folder="true" part="propertiesHolder" ratio="0.24886878" ratioLeft="165" ratioRight="498" relationship="4" relative="statesViewHolder">
+<folder appearance="2" expanded="2">
+<page content="com.adobe.flexbuilder.mxml.editor.inspector.view.PropertiesView" label="LabelNotFound"/>
+<page content="com.adobe.flexbuilder.mxml.editor.AppearanceView" label="LabelNotFound"/>
+<presentation id="org.eclipse.ui.presentations.WorkbenchPresentationFactory"/>
+</folder>
+</info>
+<info folder="true" part="bottomLayout" ratio="0.74962294" ratioLeft="497" ratioRight="166" relationship="4" relative="org.eclipse.ui.editorss">
+<folder activePageID="org.eclipse.ui.console.ConsoleView" appearance="2" expanded="2">
+<page content="org.eclipse.ui.views.ProblemView" label="Problems"/>
+<page content="com.adobe.flexbuilder.dcrad.views.DataServicesView" label="Data/Services"/>
+<page content="com.adobe.flexbuilder.monitors.network.view.NetworkMonitorView" label="Network Monitor"/>
+<page content="org.eclipse.ui.console.ConsoleView" label="Console"/>
+<page content="org.eclipse.search.ui.views.SearchView" label="Search"/>
+<page content="com.adobe.flexbuilder.as.editor.asdocviewer" label="ASDoc"/>
+<page content="com.adobe.flexbuilder.mxml.editor.design.internal.errors.view.DesignModeProblemsView" label="LabelNotFound"/>
+<presentation id="org.eclipse.ui.presentations.WorkbenchPresentationFactory">
+<part id="0"/>
+<part id="1"/>
+<part id="2"/>
+<part id="3"/>
+<part id="4"/>
+<part id="5"/>
+</presentation>
+</folder>
+</info>
+<info folder="true" part="outlineHolder" ratio="0.6915584" ratioLeft="426" ratioRight="190" relationship="4" relative="org.eclipse.ui.internal.ViewStack@1858df1">
+<folder activePageID="org.eclipse.ui.views.ContentOutline" appearance="2" expanded="2">
+<page content="org.eclipse.ui.views.ContentOutline" label="Outline"/>
+<page content="com.adobe.flexbuilder.mxml.editor.components.ComponentsView" label="LabelNotFound"/>
+<presentation id="org.eclipse.ui.presentations.WorkbenchPresentationFactory">
+<part id="0"/>
+</presentation>
+</folder>
+</info>
+</mainWindow>
+</layout>
+</perspective>
+<perspective editorAreaTrimState="2" editorAreaVisible="1" fixed="0" version="0.016">
+<descriptor class="com.adobe.flexbuilder.debug.ui.perspectives.FlexDebugPerspectiveFactory" id="com.adobe.flexbuilder.debug.ui.perspectives.debug" label="Flash Debug"/>
+<alwaysOnActionSet id="com.adobe.flexbuilder.editorcore.modeswitch"/>
+<alwaysOnActionSet id="com.adobe.flexbuilder.flashbridge.flashproject.actionSet"/>
+<alwaysOnActionSet id="com.adobe.flexbuilder.designview.activationcontrol"/>
+<alwaysOnActionSet id="org.eclipse.mylyn.context.ui.actionSet"/>
+<alwaysOnActionSet id="org.eclipse.mylyn.doc.actionSet"/>
+<alwaysOnActionSet id="org.eclipse.mylyn.tasks.ui.navigation"/>
+<alwaysOnActionSet id="org.eclipse.ui.cheatsheets.actionSet"/>
+<alwaysOnActionSet id="org.eclipse.search.searchActionSet"/>
+<alwaysOnActionSet id="org.eclipse.ui.edit.text.actionSet.annotationNavigation"/>
+<alwaysOnActionSet id="org.eclipse.ui.edit.text.actionSet.navigation"/>
+<alwaysOnActionSet id="org.eclipse.ui.edit.text.actionSet.convertLineDelimitersTo"/>
+<alwaysOnActionSet id="org.eclipse.ui.externaltools.ExternalToolsSet"/>
+<alwaysOnActionSet id="org.eclipse.ui.actionSet.keyBindings"/>
+<alwaysOnActionSet id="org.eclipse.ui.actionSet.openFiles"/>
+<alwaysOnActionSet id="org.eclipse.wb.core.ui.actionset"/>
+<alwaysOnActionSet id="org.eclipse.debug.ui.launchActionSet"/>
+<alwaysOnActionSet id="org.eclipse.debug.ui.profileActionSet"/>
+<alwaysOnActionSet id="org.eclipse.ui.NavigateActionSet"/>
+<alwaysOnActionSet id="org.eclipse.debug.ui.breakpointActionSet"/>
+<alwaysOnActionSet id="com.adobe.flexbuilder.debug.ui.flexDebuggingActionSet"/>
+<alwaysOnActionSet id="com.adobe.flexbuilder.zzz.editors.common.ui.project.publish"/>
+<alwaysOnActionSet id="com.adobe.flexbuilder.exportimport.actionSet1"/>
+<alwaysOnActionSet id="com.adobe.flexbuilder.as.editor.ui.NavigationActions"/>
+<alwaysOnActionSet id="org.eclipse.debug.ui.debugActionSet"/>
+<alwaysOnActionSet id="com.adobe.flexbuilder.dcrad.actionSet"/>
+<show_view_action id="org.eclipse.debug.ui.VariableView"/>
+<show_view_action id="org.eclipse.debug.ui.BreakpointView"/>
+<show_view_action id="org.eclipse.debug.ui.ExpressionView"/>
+<show_view_action id="org.eclipse.ui.console.ConsoleView"/>
+<show_view_action id="org.eclipse.debug.ui.DebugView"/>
+<show_view_action id="org.eclipse.ui.views.ProblemView"/>
+<show_view_action id="com.adobe.flexbuilder.mxml.editor.AppearanceView"/>
+<show_view_action id="com.adobe.flexbuilder.mxml.editor.components.ComponentsView"/>
+<show_view_action id="com.adobe.flexbuilder.packageexplorer"/>
+<show_view_action id="org.eclipse.ui.views.ContentOutline"/>
+<show_view_action id="com.adobe.flexbuilder.mxml.editor.inspector.view.PropertiesView"/>
+<show_view_action id="com.adobe.flexbuilder.mxml.editor.states.StatesViewer"/>
+<new_wizard_action id="com.adobe.flexbuilder.editorcore.ui.project.wizards.newproject"/>
+<new_wizard_action id="com.adobe.flexbuilder.project.ui.wizards.FlexLibraryProjectWizard"/>
+<new_wizard_action id="com.adobe.flashbuilder.project.multiplatform.ui.MultiPlatformProjectWizard"/>
+<new_wizard_action id="com.adobe.flexbuilder.project.ui.wizards.NewActionScriptProjectWizard"/>
+<new_wizard_action id="com.adobe.flashbuilder.project.multiplatform.ui.MultiPlatformActionScriptProjectWizard"/>
+<new_wizard_action id="com.adobe.flexbuilder.flashbridge.NewFlashProProjectWizard"/>
+<new_wizard_action id="com.adobe.flexbuilder.editorcore.ui.project.wizards.newflashcatalystproject"/>
+<new_wizard_action id="com.adobe.flexbuilder.mxml.editor.ui.wizards.NewMXMLApplication"/>
+<new_wizard_action id="com.adobe.flexbuilder.mxml.editor.ui.wizards.NewMXMLComponent"/>
+<new_wizard_action id="com.adobe.flexbuilder.mxml.editor.ui.wizards.NewMXMLItemRenderer"/>
+<new_wizard_action id="com.adobe.flexbuilder.mxml.editor.ui.wizards.NewMXMLModule"/>
+<new_wizard_action id="com.adobe.flexbuilder.mxml.editor.ui.wizards.NewMXMLSkin"/>
+<new_wizard_action id="com.adobe.flexbuilder.as.editor.wizards.NewActionScriptFile.flex"/>
+<new_wizard_action id="com.adobe.flexbuilder.as.editor.classWizard.flex"/>
+<new_wizard_action id="com.adobe.flexbuilder.as.editor.interfaceWizard.flex"/>
+<new_wizard_action id="com.adobe.flexbuilder.as.editor.skinnableComponentWizard.flex"/>
+<new_wizard_action id="com.adobe.flexbuilder.css.editor.wizards.NewCSSFile"/>
+<new_wizard_action id="com.adobe.flexbuilder.as.editor.flexUnitClassWizard.flex"/>
+<new_wizard_action id="com.adobe.flexbuilder.as.editor.flexUnitTestSuiteClassWizard.flex"/>
+<new_wizard_action id="com.adobe.flexbuilder.as.editor.packageWizard.flex"/>
+<new_wizard_action id="org.eclipse.ui.wizards.new.folder"/>
+<new_wizard_action id="org.eclipse.ui.wizards.new.file"/>
+<perspective_action id="com.adobe.flexbuilder.editors.mxml.ui.perspectives.development"/>
+<perspective_action id="com.adobe.flexbuilder.debug.ui.perspectives.debug"/>
+<perspective_action id="com.adobe.flash.profiler.ui.ProfilingPerspective"/>
+<hide_toolbar_item_id id="org.eclipse.jdt.ui.actions.OpenProjectWizard"/>
+<hide_toolbar_item_id id="org.eclipse.ui.edit.text.toggleShowSelectedElementOnly"/>
+<view id="org.eclipse.ui.console.ConsoleView"/>
+<view id="com.adobe.flexbuilder.dcrad.views.DataServicesView"/>
+<view id="com.adobe.flexbuilder.monitors.network.view.NetworkMonitorView"/>
+<view id="org.eclipse.debug.ui.DebugView"/>
+<view id="org.eclipse.debug.ui.VariableView"/>
+<view id="org.eclipse.debug.ui.BreakpointView"/>
+<view id="org.eclipse.debug.ui.ExpressionView"/>
+<fastViewBars/>
+<layout>
+<mainWindow>
+<info folder="true" part="org.eclipse.debug.internal.ui.NavigatorFolderView">
+<folder activePageID="org.eclipse.debug.ui.DebugView" appearance="2" expanded="2">
+<page content="org.eclipse.debug.ui.DebugView" label="Debug"/>
+<presentation id="org.eclipse.ui.presentations.WorkbenchPresentationFactory">
+<part id="0"/>
+</presentation>
+</folder>
+</info>
+<info folder="true" part="stickyFolderRight" ratio="0.7496318" ratioLeft="1018" ratioRight="340" relationship="2" relative="org.eclipse.debug.internal.ui.NavigatorFolderView">
+<folder appearance="2" expanded="2">
+<page content="org.eclipse.help.ui.HelpView" label="LabelNotFound"/>
+<page content="org.eclipse.ui.internal.introview" label="LabelNotFound"/>
+<page content="org.eclipse.ui.cheatsheets.views.CheatSheetView" label="LabelNotFound"/>
+<presentation id="org.eclipse.ui.presentations.WorkbenchPresentationFactory"/>
+</folder>
+</info>
+<info folder="true" part="org.eclipse.debug.internal.ui.ConsoleFolderView" ratio="0.7987013" ratioLeft="492" ratioRight="124" relationship="4" relative="org.eclipse.debug.internal.ui.NavigatorFolderView">
+<folder activePageID="org.eclipse.ui.console.ConsoleView" appearance="2" expanded="2">
+<page content="org.eclipse.ui.console.ConsoleView" label="Console"/>
+<page content="com.adobe.flexbuilder.dcrad.views.DataServicesView" label="Data/Services"/>
+<page content="com.adobe.flexbuilder.monitors.network.view.NetworkMonitorView" label="Network Monitor"/>
+<presentation id="org.eclipse.ui.presentations.WorkbenchPresentationFactory">
+<part id="0"/>
+<part id="1"/>
+<part id="2"/>
+</presentation>
+</folder>
+</info>
+<info part="org.eclipse.ui.editorss" ratio="0.28425357" ratioLeft="139" ratioRight="350" relationship="4" relative="org.eclipse.debug.internal.ui.NavigatorFolderView"/>
+<info folder="true" part="org.eclipse.debug.internal.ui.ToolsFolderView" ratio="0.5" ratioLeft="679" ratioRight="679" relationship="2" relative="org.eclipse.debug.internal.ui.NavigatorFolderView">
+<folder activePageID="org.eclipse.debug.ui.ExpressionView" appearance="2" expanded="2">
+<page content="org.eclipse.debug.ui.VariableView" label="Variables"/>
+<page content="org.eclipse.debug.ui.BreakpointView" label="Breakpoints"/>
+<page content="org.eclipse.debug.ui.ExpressionView" label="Expressions"/>
+<presentation id="org.eclipse.ui.presentations.WorkbenchPresentationFactory">
+<part id="0"/>
+<part id="1"/>
+<part id="2"/>
+</presentation>
+</folder>
+</info>
+</mainWindow>
+</layout>
+</perspective>
+</perspectives>
+<workingSets/>
+<navigationHistory>
+<editors>
+<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="com.adobe.flexbuilder.editors.actionscript.ActionScriptEditor" path="/CurrDist-FMK_RIA_Working/src/framework/ECommand_ABM.as"/>
+<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="com.adobe.flexbuilder.editors.actionscript.ActionScriptEditor" path="/CurrDist_Template-Framework-APP_RIA/src/Modules/ABMPersonas/Application/bussiness/commands/ABMPersonasCommand.as"/>
+<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="com.adobe.flexbuilder.editors.mxml.MXMLEditor" path="/CurrDist_Template-Framework-APP_RIA/src/Modules/ABMPersonas/Application/view/MainScreen.mxml"/>
+<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="com.adobe.flexbuilder.editors.mxml.MXMLEditor" path="/CurrDist_Template-Framework-APP_RIA/src/Main.mxml"/>
+<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="com.adobe.flexbuilder.mxml.editor.MXMLCodeEditor" path="/CurrDist_Template-Framework-APP_RIA/src/Modules/ABMPersonas/Application/view/MainScreen.mxml"/>
+<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="com.adobe.flexbuilder.mxml.editor.MXMLCodeEditor" path="/CurrDist_Template-Framework-APP_RIA/src/Main.mxml"/>
+<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="com.adobe.flexbuilder.editors.actionscript.ActionScriptEditor" path="/CurrDist-FMK_RIA_Working/src/framework/EService.as"/>
+</editors>
+<item historyLabel="ECommand_ABM.as" index="0">
+<position info="not_deleted" x="886" y="0"/>
+</item>
+<item historyLabel="ABMPersonasCommand.as" index="1">
+<position info="not_deleted" x="5054" y="0"/>
+</item>
+<item historyLabel="EService.as" index="6">
+<position info="not_deleted" x="542" y="0"/>
+</item>
+<item historyLabel="EService.as" index="6">
+<position info="not_deleted" x="6143" y="0"/>
+</item>
+<item historyLabel="EService.as" index="6">
+<position info="not_deleted" x="1418" y="0"/>
+</item>
+<item historyLabel="EService.as" index="6">
+<position info="not_deleted" x="1534" y="0"/>
+</item>
+<item historyLabel="Main.mxml" index="3">
+<position info="not_deleted" x="5931" y="0"/>
+</item>
+<item historyLabel="Main.mxml" index="5">
+<position info="not_deleted" x="6095" y="0"/>
+</item>
+<item historyLabel="Main.mxml" index="5">
+<position info="not_deleted" x="7961" y="0"/>
+</item>
+<item historyLabel="Main.mxml" index="5">
+<position info="not_deleted" x="2231" y="0"/>
+</item>
+<item historyLabel="Main.mxml" index="5">
+<position info="not_deleted" x="2978" y="0"/>
+</item>
+<item historyLabel="Main.mxml" index="5">
+<position info="not_deleted" x="5227" y="0"/>
+</item>
+<item historyLabel="Main.mxml" index="5">
+<position info="not_deleted" x="5931" y="0"/>
+</item>
+<item historyLabel="ECommand_ABM.as" index="0">
+<position info="not_deleted" x="886" y="0"/>
+</item>
+<item historyLabel="ABMPersonasCommand.as" index="1">
+<position info="not_deleted" x="5054" y="0"/>
+</item>
+<item historyLabel="EService.as" index="6">
+<position info="not_deleted" x="6143" y="0"/>
+</item>
+<item historyLabel="EService.as" index="6">
+<position info="not_deleted" x="1418" y="0"/>
+</item>
+<item historyLabel="EService.as" index="6">
+<position info="not_deleted" x="1735" y="0"/>
+</item>
+<item historyLabel="EService.as" index="6">
+<position info="not_deleted" x="1563" y="0"/>
+</item>
+<item historyLabel="EService.as" index="6">
+<position info="not_deleted" x="2203" y="0"/>
+</item>
+<item historyLabel="ABMPersonasCommand.as" index="1">
+<position info="not_deleted" x="3017" y="0"/>
+</item>
+<item historyLabel="ABMPersonasCommand.as" index="1">
+<position info="not_deleted" x="4362" y="0"/>
+</item>
+<item historyLabel="MainScreen.mxml" index="2">
+<position info="not_deleted" x="7750" y="0"/>
+</item>
+<item historyLabel="MainScreen.mxml" index="4">
+<position info="not_deleted" x="7816" y="0"/>
+</item>
+<item historyLabel="MainScreen.mxml" index="4">
+<position info="not_deleted" x="7977" y="0"/>
+</item>
+<item historyLabel="ECommand_ABM.as" index="0">
+<position info="not_deleted" x="886" y="0"/>
+</item>
+<item historyLabel="ABMPersonasCommand.as" index="1">
+<position info="not_deleted" x="6377" y="0"/>
+</item>
+<item historyLabel="ABMPersonasCommand.as" index="1">
+<position info="not_deleted" x="6736" y="0"/>
+</item>
+<item historyLabel="ABMPersonasCommand.as" index="1">
+<position info="not_deleted" x="6997" y="0"/>
+</item>
+<item historyLabel="EService.as" index="6">
+<position info="not_deleted" x="1418" y="0"/>
+</item>
+<item historyLabel="EService.as" index="6">
+<position info="not_deleted" x="1735" y="0"/>
+</item>
+<item historyLabel="EService.as" index="6">
+<position info="not_deleted" x="2203" y="0"/>
+</item>
+<item historyLabel="ABMPersonasCommand.as" index="1">
+<position info="not_deleted" x="6021" y="0"/>
+</item>
+<item historyLabel="ECommand_ABM.as" index="0">
+<position info="not_deleted" x="886" y="0"/>
+</item>
+<item historyLabel="ABMPersonasCommand.as" index="1">
+<position info="not_deleted" x="5054" y="0"/>
+</item>
+<item historyLabel="EService.as" index="6">
+<position info="not_deleted" x="6143" y="0"/>
+</item>
+<item historyLabel="EService.as" index="6">
+<position info="not_deleted" x="1418" y="0"/>
+</item>
+<item historyLabel="EService.as" index="6">
+<position info="not_deleted" x="1735" y="0"/>
+</item>
+<item historyLabel="EService.as" index="6">
+<position info="not_deleted" x="2203" y="0"/>
+</item>
+<item historyLabel="ABMPersonasCommand.as" index="1">
+<position info="not_deleted" x="3017" y="0"/>
+</item>
+<item historyLabel="ABMPersonasCommand.as" index="1">
+<position info="not_deleted" x="4362" y="0"/>
+</item>
+<item historyLabel="MainScreen.mxml" index="2">
+<position info="not_deleted" x="7977" y="0"/>
+</item>
+<item historyLabel="MainScreen.mxml" index="4">
+<position info="not_deleted" x="4625" y="10"/>
+</item>
+<item historyLabel="MainScreen.mxml" index="4">
+<position info="not_deleted" x="8653" y="10"/>
+</item>
+<item historyLabel="MainScreen.mxml" index="4">
+<position/>
+</item>
+<item historyLabel="MainScreen.mxml" index="4">
+<position/>
+</item>
+<item historyLabel="MainScreen.mxml" index="4">
+<position/>
+</item>
+<item historyLabel="MainScreen.mxml" index="4">
+<position/>
+</item>
+<item historyLabel="MainScreen.mxml" index="4">
+<position info="not_deleted" x="4632" y="0"/>
+</item>
+<item active="true" historyLabel="MainScreen.mxml" index="4">
+<position info="not_deleted" x="8204" y="14"/>
+</item>
+</navigationHistory>
+<input factoryID="org.eclipse.ui.internal.model.ResourceFactory" path="/" type="8"/>
+</page>
+<workbenchWindowAdvisor/>
+<actionBarAdvisor/>
+<trimLayout>
+<trimArea IMemento.internal.id="128">
+<trimItem IMemento.internal.id="org.eclipse.ui.internal.WorkbenchWindow.topBar"/>
+<trimItem IMemento.internal.id="org.eclipse.mylyn.tasks.ui.trim.container"/>
+</trimArea>
+<trimArea IMemento.internal.id="1024">
+<trimItem IMemento.internal.id="org.eclise.ui.internal.FastViewBar"/>
+<trimItem IMemento.internal.id="org.eclipse.jface.action.StatusLineManager"/>
+<trimItem IMemento.internal.id="org.eclipse.ui.internal.progress.ProgressRegion"/>
+</trimArea>
+</trimLayout>
+</window>
+<mruList>
+<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="com.adobe.flexbuilder.editors.actionscript.ActionScriptEditor" name="ECommand_ABM.as" tooltip="CurrDist-FMK_RIA_Working/src/framework/ECommand_ABM.as">
+<persistable path="/CurrDist-FMK_RIA_Working/src/framework/ECommand_ABM.as"/>
+</file>
+<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="com.adobe.flexbuilder.editors.actionscript.ActionScriptEditor" name="MainScreenModel.as" tooltip="CurrDist_Template-Framework-APP_RIA/src/Modules/ABMPersonas/Application/presentationModel/MainScreenModel.as">
+<persistable path="/CurrDist_Template-Framework-APP_RIA/src/Modules/ABMPersonas/Application/presentationModel/MainScreenModel.as"/>
+</file>
+<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="com.adobe.flexbuilder.editors.mxml.MXMLEditor" name="MainScreen.mxml" tooltip="CurrDist_Template-Framework-APP_RIA/src/Modules/ABMPersonas/Application/view/MainScreen.mxml">
+<persistable path="/CurrDist_Template-Framework-APP_RIA/src/Modules/ABMPersonas/Application/view/MainScreen.mxml"/>
+</file>
+<file factoryID="com.adobe.flexbuilder.editors.derived.ui.startpage.StartPageEditorInput" id="com.adobe.flexbuilder.ui.StartPage" name="Web Browser" tooltip="Flash Builder Welcome Screen">
+<persistable iconpath="platform:/plugin/com.adobe.flexbuilder.ui/icons/fb_app_16.png" style="20" tooltip="Flash Builder Welcome Screen" url="file:/D:/Sistemas/Patagonia/FLEX/Adobe Flash Builder 4.6/eclipse/plugins/com.adobe.flexbuilder.ui_4.6.0.328916/welcome/index.html?firstLaunch=false&amp;edition=stnd&amp;version=460"/>
+</file>
+<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.wst.xml.ui.internal.tabletree.XMLMultiPageEditorPart" name="services.xml" tooltip="CurrDist_Template-Framework-APP_RIA/src/data/conf/services.xml">
+<persistable path="/CurrDist_Template-Framework-APP_RIA/src/data/conf/services.xml"/>
+</file>
+<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="com.adobe.flexbuilder.editors.actionscript.ActionScriptEditor" name="Messages.as" tooltip="CurrDist_Template-Framework-APP_RIA/src/Modules/ABMPersonas/data/conf/Messages.as">
+<persistable path="/CurrDist_Template-Framework-APP_RIA/src/Modules/ABMPersonas/data/conf/Messages.as"/>
+</file>
+<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.wst.xml.ui.internal.tabletree.XMLMultiPageEditorPart" name="services_local.xml" tooltip="CurrDist_Template-Framework-APP_RIA/src/data/conf/services_local.xml">
+<persistable path="/CurrDist_Template-Framework-APP_RIA/src/data/conf/services_local.xml"/>
+</file>
+<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="com.adobe.flexbuilder.editors.actionscript.ActionScriptEditor" name="ABMPersonasDTO_baja.as" tooltip="CurrDist_Template-Framework-APP_RIA/src/Modules/ABMPersonas/Application/bussiness/Entities/DTOs/ABMPersonasDTO_baja.as">
+<persistable path="/CurrDist_Template-Framework-APP_RIA/src/Modules/ABMPersonas/Application/bussiness/Entities/DTOs/ABMPersonasDTO_baja.as"/>
+</file>
+<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="com.adobe.flexbuilder.editors.actionscript.ActionScriptEditor" name="ABMPersonasDTO_alta.as" tooltip="CurrDist_Template-Framework-APP_RIA/src/Modules/ABMPersonas/Application/bussiness/Entities/DTOs/ABMPersonasDTO_alta.as">
+<persistable path="/CurrDist_Template-Framework-APP_RIA/src/Modules/ABMPersonas/Application/bussiness/Entities/DTOs/ABMPersonasDTO_alta.as"/>
+</file>
+<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="com.adobe.flexbuilder.editors.actionscript.ActionScriptEditor" name="ABMPersonasDTO_consulta.as" tooltip="CurrDist_Template-Framework-APP_RIA/src/Modules/ABMPersonas/Application/bussiness/Entities/DTOs/ABMPersonasDTO_consulta.as">
+<persistable path="/CurrDist_Template-Framework-APP_RIA/src/Modules/ABMPersonas/Application/bussiness/Entities/DTOs/ABMPersonasDTO_consulta.as"/>
+</file>
+<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="com.adobe.flexbuilder.editors.actionscript.ActionScriptEditor" name="IABMCommand.as" tooltip="CurrDist-FMK_RIA_Working/src/framework/IABMCommand.as">
+<persistable path="/CurrDist-FMK_RIA_Working/src/framework/IABMCommand.as"/>
+</file>
+<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.wst.xml.ui.internal.tabletree.XMLMultiPageEditorPart" name="edades.xml" tooltip="CurrDist_Template-Framework-APP_RIA/src/data/edades.xml">
+<persistable path="/CurrDist_Template-Framework-APP_RIA/src/data/edades.xml"/>
+</file>
+<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="com.adobe.flexbuilder.editors.actionscript.ActionScriptEditor" name="ABMPersonasCommand.as" tooltip="CurrDist_Template-Framework-APP_RIA/src/Modules/ABMPersonas/Application/bussiness/commands/ABMPersonasCommand.as">
+<persistable path="/CurrDist_Template-Framework-APP_RIA/src/Modules/ABMPersonas/Application/bussiness/commands/ABMPersonasCommand.as"/>
+</file>
+<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="com.adobe.flexbuilder.editors.actionscript.ActionScriptEditor" name="IService.as" tooltip="CurrDist-FMK_RIA_Working/src/framework/IService.as">
+<persistable path="/CurrDist-FMK_RIA_Working/src/framework/IService.as"/>
+</file>
+</mruList>
+</workbench>

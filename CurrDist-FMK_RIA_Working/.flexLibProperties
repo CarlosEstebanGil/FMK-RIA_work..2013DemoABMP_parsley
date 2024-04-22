@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<flexLibProperties includeAllClasses="true" useMultiPlatformConfig="false" version="3">
+  <includeClasses>
+    <classEntry path="framework.ContainerProfileValidator"/>
+    <classEntry path="framework.ECommand"/>
+    <classEntry path="framework.ECommand_ABM"/>
+    <classEntry path="framework.EMessage"/>
+    <classEntry path="framework.EService"/>
+    <classEntry path="framework.IABMCommand"/>
+    <classEntry path="framework.ICommand"/>
+    <classEntry path="framework.IExecutable"/>
+    <classEntry path="framework.IMessage"/>
+    <classEntry path="framework.IParsleyCommand"/>
+    <classEntry path="framework.IProfile"/>
+    <classEntry path="framework.IService"/>
+    <classEntry path="framework.components.EAreaChart"/>
+    <classEntry path="framework.components.EBarChart"/>
+    <classEntry path="framework.components.EButton"/>
+    <classEntry path="framework.components.EButtonBar"/>
+    <classEntry path="framework.components.ECanvas"/>
+    <classEntry path="framework.components.ECheckBox"/>
+    <classEntry path="framework.components.EColumnChart"/>
+    <classEntry path="framework.components.EComboBox"/>
+    <classEntry path="framework.components.EDataGrid"/>
+    <classEntry path="framework.components.EDateChooser"/>
+    <classEntry path="framework.components.EDateField"/>
+    <classEntry path="framework.components.ELabel"/>
+    <classEntry path="framework.components.ELineChart"/>
+    <classEntry path="framework.components.ELinkButton"/>
+    <classEntry path="framework.components.EList"/>
+    <classEntry path="framework.components.EMenuBar"/>
+    <classEntry path="framework.components.EPanel"/>
+    <classEntry path="framework.components.EPieChart"/>
+    <classEntry path="framework.components.ERadioButton"/>
+    <classEntry path="framework.components.ETabNavigator"/>
+    <classEntry path="framework.components.ETextArea"/>
+    <classEntry path="framework.components.ETextInput"/>
+    <classEntry path="framework.components.ETree"/>
+    <classEntry path="framework.components.Login.Application.bussiness.Entities.IUser"/>
+    <classEntry path="framework.components.Login.Application.bussiness.services.LoginService"/>
+    <classEntry path="framework.components.Login.Application.messages.LoginRequestMessage"/>
+    <classEntry path="framework.components.Login.Application.messages.MensajePruebaTmp"/>
+    <classEntry path="framework.components.Login.Application.presentationModel.AnotherModelExampleForOutput"/>
+    <classEntry path="framework.components.Login.Login"/>
+    <classEntry path="framework.components.Login.LoginConfig"/>
+    <classEntry path="framework.components.Login.data.mock.FakeModelXxx"/>
+    <classEntry path="framework.components.events.EAutoPopulableListCompEvent"/>
+    <classEntry path="framework.components.Login.Application.messages.EFlexEvent"/>
+  </includeClasses>
+  <includeResources/>
+  <namespaceManifests/>
+</flexLibProperties>

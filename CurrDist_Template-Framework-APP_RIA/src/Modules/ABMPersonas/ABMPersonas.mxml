@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<!-- s:Panel xmlns:fx="http://ns.adobe.com/mxml/2009"  --> 
+
+<!-- 20160803 components:EPanel xmlns:fx="http://ns.adobe.com/mxml/2009"
+				   xmlns:s="library://ns.adobe.com/flex/spark"
+				   xmlns:mx="library://ns.adobe.com/flex/mx"
+				   xmlns:view="Modules.ABMUsuarios.Application.view.*"
+				   xmlns:components="framework.components.*"
+				   width="980" height="580" creationComplete="initMod()" title="PATAGONIA IT S.R.L" --> 
+	<!-- ya existia epanel sin impl osea si cod extra pero extend flex panel asi que lo vuelvo a poner luego  -->
+	
+<components:EPanel xmlns:mx="http://www.adobe.com/2006/mxml" 
+				   creationComplete="initMod()" 
+				   xmlns:components="framework.components.*"
+				   title="DEMO (ABM Personas)" xmlns:view="Modules.ABMPersonas.Application.view.*"
+				   width="1370" height="700" autoLayout="false" x="1" y="1"  > <!-- headerHeight="0" -->
+	
+				   <!-- autoLayout="false" x="10" y="10" width="2100" height="2000" -->
+
+	
+	
+	<mx:Script>
+		<![CDATA[
+			import mx.controls.Alert;
+			
+			public function initMod():void{
+				//20160827 Alert.show("initMod");
+			}
+			
+			/*public function onLoginContextComplete():void {
+				//textTmpPrueba="onLoginContextComplete..";	
+				
+			}*/
+			
+	]]>
+	</mx:Script>
+	
+	<view:MainScreen x="1" y="1" width="1350" height="650" /> <!--20160827 x="46" y="8" width="900" height="487" -->
+	
+	<!-- 20160803 saco esto por ahora unicamente y dibujo acá algo basico -->
+	
+	<!-- 20150803 mx:Canvas id="contenedor" width="900" height="800" 
+		 s:Label id="lblIdUsuario" x="14" y="43" width="81" fontWeight="bold" text="ID Usuario:" textAlign="right" 
+		 s:TextInput id="txtIdUsuario" x="103" y="33" focusEnabled="true" text="PRUEBA"   			 
+	 mx:Canvas -->
+
+</components:EPanel>

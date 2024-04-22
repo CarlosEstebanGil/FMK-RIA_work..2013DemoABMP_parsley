@@ -1,0 +1,4 @@
+#Thu Oct 27 17:29:50 GMT-03:00 2016
+eclipse.preferences.version=1
+activeViewIDs2=org.eclipse.ui.console.ConsoleView,org.eclipse.debug.ui.DebugView,org.eclipse.debug.ui.ExpressionView
+autoViewIDs=com.adobe.flexbuilder.mxml.editor.states.StatesViewer\=design-mxml\=0\=true,com.adobe.flexbuilder.mxml.editor.components.ComponentsView\=design-mxml\=0\=true,com.adobe.flexbuilder.mxml.editor.inspector.view.PropertiesView\=design-mxml;design-css\=0\=true,com.adobe.flexbuilder.as.editor.asdocviewer\=code\=0\=false,com.adobe.flexbuilder.mxml.editor.AppearanceView\=design-mxml\=1\=false

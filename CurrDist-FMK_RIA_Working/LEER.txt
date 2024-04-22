@@ -1,0 +1,13 @@
+es la version c:\Users\car\Adobe Flash Builder 4.6\Backup20140429\FMK_RIA\
+
+abril 2014 recien sepaado fuera de la app ppal pero en 1 sola parte y no en mas 
+
+
+NEW -> !!! IMPORTANTE : 
+
+Las carpetas events, Login y Skins (menos lo del raiz)  los sumé de otra version mas nueva! 
+para tener de paso mas parecida la estructura y además tener el modulo LOGIN ( de paso lo traje de 
+una donde el login estaba cambiado ya para que funcione sin parsley ! ) 
+
+
+

@@ -1,0 +1,12 @@
+.singleImageButtonStyle
+{
+    skin: Embed("modules/ABMUsuarios/SaveBlueButton.jpg");
+}
+
+.multipleImageButtonStyle
+{
+    up-skin: Embed("modules/ABMUsuarios/SaveBlueButton.jpg");
+    down-skin: Embed("modules/ABMUsuarios/SaveBlueButton.jpg");
+    over-skin: Embed("modules/ABMUsuarios/SaveBlueButton.jpg");
+    disabled-skin: Embed("modules/ABMUsuarios/SaveBlueButton.jpg");
+}

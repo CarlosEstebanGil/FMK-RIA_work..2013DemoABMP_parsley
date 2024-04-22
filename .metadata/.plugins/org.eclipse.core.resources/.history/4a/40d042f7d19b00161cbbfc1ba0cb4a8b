@@ -1,0 +1,154 @@
+	package Modules.ABMPersonas.Application.bussiness.commands
+{
+/*	20160805 import Modules.ABMUsuarios.Application.bussiness.Entities.DTOs.ABMUsuariosDTO_alta;
+	import Modules.ABMUsuarios.Application.bussiness.Entities.DTOs.ABMUsuariosDTO_baja;*/
+
+	import Modules.ABMPersonas.Application.bussiness.Entities.DTOs.ABMPersonasDTO_consulta;
+	import Modules.ABMPersonas.Application.presentationModel.MainScreenModel;
+	
+	import application.domain.GlobalModel;
+	
+	import framework.ECommand_ABM;
+	import framework.EService;
+	import framework.IService;
+	
+	import mx.collections.XMLListCollection;
+	import mx.rpc.events.FaultEvent;
+	import mx.rpc.events.ResultEvent;
+	
+	public class ABMPersonasCommand extends ECommand_ABM {
+		
+		//20160806 [Inject]
+		//20160806 [Bindable]
+		//20160805 public var model:GlobalModel; NO NECESITO Var ptr para apuntarlo xq ya es de acceso global 
+		
+		//20160806 [Inject]
+		//20160806 [Bindable]
+		public var pmModel:MainScreenModel;
+		
+		
+		//20160806 [Inject (id="ABMUsuariosSvc")]	
+		public var svc:IService=new EService(); //20160806 	
+		
+		override public function getService():IService {
+			return this.svc;  
+		}
+		
+		public function ABMPersonasCommand() {
+			super();
+		}
+		
+		
+		/*
+		//-------------------------------------BAJA-------------------------------------
+
+		override public function bajaAction(data:Object):void { //(dataXMLCollection:XMLListCollection):void {
+			pmModel.txtTmpText="BAJA Usuario EFECTUADA CON EXITO"; 	
+		}
+		override public function getURLBaja():String {
+			return model.servicios.bajaUser; 
+		}
+		override public function bajaFault(evento:FaultEvent):void {
+			pmModel.txtTmpText="ERROR en BAJA Usuarios!"; 
+		}
+		override public function completedParametersString_Baja():String{
+			var abmUsuariosDTO_baja:ABMUsuariosDTO_baja= this.message.data as ABMUsuariosDTO_baja;
+			return "&user_id="+abmUsuariosDTO_baja.user_id;
+			
+		} 
+
+		
+		//-------------------------------------MODIF-------------------------------------
+		override public function modifAction(data:Object):void { //(dataXMLCollection:XMLListCollection):void {
+			pmModel.txtTmpText="Modificacion de Usuario EFECTUADA CON EXITO"; 
+		}
+		override public function getURLModif():String {
+			// return model.servicios.altaUsuarios;
+			return "http://tecnocodigo.myftp.org/bioargenta/funciones/InsertTest.php?x=1";
+			
+		}
+		override public function modifFault(evento:FaultEvent):void {
+			pmModel.txtTmpText="ERROR en Modif Usuarios!"; 
+		}
+		override public function completedParametersString_Modif():String{
+			var abmUsuariosDTO_alta:ABMUsuariosDTO_alta = this.message.data as ABMUsuariosDTO_alta;
+			
+			return "";
+		} */
+		
+		//-------------------------------------CONS-------------------------------------
+		
+		override public function consultaAction(dataXMLCollection:XMLListCollection):void { //20160806 (*)antes usaba xmllistcollection en el api viejo (data:Object):void { // (dataXMLCollection:XMLListCollection):void {
+			try {
+				/* 20160508 pmModel.txtIdUsuario = data.result.reg.user_id;	
+				pmModel.txtNombre = data.result.reg.username;
+				pmModel.txtClave = data.result.reg.password;
+				pmModel.txtNombre = data.result.reg.nombre;
+				pmModel.txtApellido = data.result.reg.apellido;
+				pmModel.txtMail = data.result.reg.email;
+				pmModel.dtfActivacion = data.result.reg.fecha_activacion;
+				pmModel.txtBatMymtec = data.result.reg.bat_mymtec;
+				pmModel.txtUsuarioRed = data.result.reg.username_red;
+				pmModel.grpTipo = data.result.reg.grpTipo;
+				pmModel.cmbIndexCli = data.result.reg.selectCli; */
+				
+				//com 20160806 
+				//20160824 no detecta asigs.. a esta var y luego bindings a objs q la observen con {} , creo q x new pmModel tardio o algo asi
+				//pruebo asig directa al datagrid comp     
+				//pmModel.xmllcUsuarios = dataXMLCollection; //data 20160806 -> (*)as XMLListCollection; // ver si funca el cast sino meter codigo de 3 pasos de recasteo acá.
+				//20161026 pmModel.msPtr.dgClientes.dataProvider= dataXMLCollection;//20180828 dgUsuarios.dataProvider= dataXMLCollection; 
+				//fin 20160824
+				pmModel.msPtr.dgPersonas.dataProvider= dataXMLCollection;//20180828 dgUsuarios.dataProvider= dataXMLCollection;
+			} catch (e:Error) {
+				trace(e);
+			} finally {
+				
+			}
+		}
+	
+		override public function getURLConsulta():String {
+			//20160806 return GlobalModel.servicios.getPers; //20160805
+			//return GlobalModel.servicios.getPers + completedParametersString_Cons(); // luego lo meti x dentro en el api.. x ahora no api. 
+			//20160805 return "http://localhost/patagonia/usuarios.php";
+			//20160806 
+			//20161026 return GlobalModel.servicios.clientes + completedParametersString_Cons(); //20160828 GlobalModel.servicios.dominios + completedParametersString_Cons();
+			return GlobalModel.servicios.personas + completedParametersString_Cons(); //20160828 GlobalModel.servicios.dominios + completedParametersString_Cons();
+		}
+		
+		override public function consultaFault(evento:FaultEvent):void {
+			pmModel.txtTmpText="!! ERROR en Consulta Personas/s !!"; 
+		}
+		
+		
+		//20160806 override public function completedParametersString_Cons():String {
+		public function completedParametersString_Cons():String {
+			return ""; //20160805
+			/*
+			20160816 var abmUsuariosDTO_consulta:ABMUsuariosDTO_consulta = this.message.data as ABMUsuariosDTO_consulta;
+			return "?user_id="+abmUsuariosDTO_consulta.user_id;
+			*/
+		} 
+		
+		
+		//-------------------------------------ALTA-------------------------------------
+		override public function altaAction(data:Object):void { //(dataXMLCollection:XMLListCollection):void {
+			pmModel.txtTmpText="ALTA Usuarios EFECTUADA CON EXITO"; 	
+		}
+		override public function getURLAlta():String {
+			// return model.servicios.altaUsuarios;
+			//return "http://tecnocodigo.myftp.org/bioargenta/funciones/InsertTest.php?x=1";
+			return model.servicios.altaUser;
+			
+		}
+		override public function altaFault(evento:FaultEvent):void {
+			pmModel.txtTmpText="ERROR en ALTA Usuarios!"; 
+		}
+		override public function completedParametersString_Alta():String{
+			var abmUsuariosDTO_alta:ABMUsuariosDTO_alta = this.message.data as ABMUsuariosDTO_alta;
+			//			return "&txtUsuario=" + abmUsuariosDTO_alta.Usuario + "&txtPassword=" + abmUsuariosDTO_alta.Password + "&txtMail=" + abmUsuariosDTO_alta.Mail;
+			return "";
+		}
+		
+	}
+	
+}

@@ -1,0 +1,266 @@
+package Modules.ABMPersonas.Application.bussiness.Entities.DTOs
+{
+	public class ABMPersonasDTO_alta {
+		private var	_user_id:String;
+		private var	_username:String;
+		private var	_password:String;
+		private var	_idcliente:int;
+		private var	_idsector:int;
+		private var	_idfuncion:int;
+		private var	_idgrupoimpo:int;
+		private var	_idgrupoexpo:int;
+		private var	_email:String;
+		private var	_tipo:int;
+		private var	_nombre:String;
+		private var	_apellido:String;
+		private var	_activado:int;
+		private var	_uid_activacion:String;
+		private var	_fecha_activacion:Date;
+		private var	_deshabilitado:int;
+		private var	_PINC_mostrar:int;
+		private var	_bat_mymtec:String;
+		private var	_username_red:String;
+		private var	_recordatorios:int;
+		private var	_acceso_buzon_virtual_comercial:String;
+		
+		public function ABMPersonasDTO_alta(User_id:String, Usuario:String, Password:String,
+		IdCliente:int, IdSector:int, IdFuncion:int, IdGrupoImpo:int, IdGrupoExpo:int,
+		Mail:String, Tipo:int, Nombre:String, Apellido:String, Activado:int, UID_Activacion:String,
+		FechaActivacion:Date, Deshabilitado:int, PINCMostrar:int, BatMymtec:String, UserNameRed:String,
+		Recordatorios:int, AccesoBuzon:String)
+		{
+			this._user_id=User_id;
+			this._username=Usuario;
+			this._password=Password;
+			this._idcliente=IdCliente;
+			this._idsector=IdSector;
+			this._idfuncion=IdFuncion;
+			this._idgrupoimpo=IdGrupoImpo;
+			this._idgrupoexpo=IdGrupoExpo;
+			this._email=Mail;
+			this._tipo=Tipo;
+			this._nombre=Nombre;
+			this._apellido=Apellido;
+			this._activado=Activado;
+			this._uid_activacion=UID_Activacion;
+			this._fecha_activacion=FechaActivacion;
+			this._deshabilitado=Deshabilitado;
+			this._PINC_mostrar=PINCMostrar;
+			this._bat_mymtec=BatMymtec;
+			this._username_red=UserNameRed;
+			this._recordatorios=Recordatorios;
+			this._acceso_buzon_virtual_comercial=AccesoBuzon;
+		}
+
+		public function get acceso_buzon_virtual_comercial():String
+		{
+			return _acceso_buzon_virtual_comercial;
+		}
+
+		public function set acceso_buzon_virtual_comercial(value:String):void
+		{
+			_acceso_buzon_virtual_comercial = value;
+		}
+
+		public function get recordatorios():int
+		{
+			return _recordatorios;
+		}
+
+		public function set recordatorios(value:int):void
+		{
+			_recordatorios = value;
+		}
+
+		public function get username_red():String
+		{
+			return _username_red;
+		}
+
+		public function set username_red(value:String):void
+		{
+			_username_red = value;
+		}
+
+		public function get bat_mymtec():String
+		{
+			return _bat_mymtec;
+		}
+
+		public function set bat_mymtec(value:String):void
+		{
+			_bat_mymtec = value;
+		}
+
+		public function get PINC_mostrar():int
+		{
+			return _PINC_mostrar;
+		}
+
+		public function set PINC_mostrar(value:int):void
+		{
+			_PINC_mostrar = value;
+		}
+
+		public function get deshabilitado():int
+		{
+			return _deshabilitado;
+		}
+
+		public function set deshabilitado(value:int):void
+		{
+			_deshabilitado = value;
+		}
+
+		public function get fecha_activacion():Date
+		{
+			return _fecha_activacion;
+		}
+
+		public function set fecha_activacion(value:Date):void
+		{
+			_fecha_activacion = value;
+		}
+
+		public function get uid_activacion():String
+		{
+			return _uid_activacion;
+		}
+
+		public function set uid_activacion(value:String):void
+		{
+			_uid_activacion = value;
+		}
+
+		public function get activado():int
+		{
+			return _activado;
+		}
+
+		public function set activado(value:int):void
+		{
+			_activado = value;
+		}
+
+		public function get apellido():String
+		{
+			return _apellido;
+		}
+
+		public function set apellido(value:String):void
+		{
+			_apellido = value;
+		}
+
+		public function get nombre():String
+		{
+			return _nombre;
+		}
+
+		public function set nombre(value:String):void
+		{
+			_nombre = value;
+		}
+
+		public function get tipo():int
+		{
+			return _tipo;
+		}
+
+		public function set tipo(value:int):void
+		{
+			_tipo = value;
+		}
+
+		public function get email():String
+		{
+			return _email;
+		}
+
+		public function set email(value:String):void
+		{
+			_email = value;
+		}
+
+		public function get idgrupoexpo():int
+		{
+			return _idgrupoexpo;
+		}
+
+		public function set idgrupoexpo(value:int):void
+		{
+			_idgrupoexpo = value;
+		}
+
+		public function get idgrupoimpo():int
+		{
+			return _idgrupoimpo;
+		}
+
+		public function set idgrupoimpo(value:int):void
+		{
+			_idgrupoimpo = value;
+		}
+
+		public function get idfuncion():int
+		{
+			return _idfuncion;
+		}
+
+		public function set idfuncion(value:int):void
+		{
+			_idfuncion = value;
+		}
+
+		public function get idsector():int
+		{
+			return _idsector;
+		}
+
+		public function set idsector(value:int):void
+		{
+			_idsector = value;
+		}
+
+		public function get idcliente():int
+		{
+			return _idcliente;
+		}
+
+		public function set idcliente(value:int):void
+		{
+			_idcliente = value;
+		}
+
+		public function get password():String
+		{
+			return _password;
+		}
+
+		public function set password(value:String):void
+		{
+			_password = value;
+		}
+
+		public function get username():String
+		{
+			return _username;
+		}
+
+		public function set username(value:String):void
+		{
+			_username = value;
+		}
+
+		public function get user_id():String
+		{
+			return _user_id;
+		}
+
+		public function set user_id(value:String):void
+		{
+			_user_id = value;
+		}
+
+	}
+}

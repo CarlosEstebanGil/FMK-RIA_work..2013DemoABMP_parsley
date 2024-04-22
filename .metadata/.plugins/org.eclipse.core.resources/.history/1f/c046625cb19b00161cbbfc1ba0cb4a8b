@@ -1,0 +1,20 @@
+package Modules.ABMPersonas.Application.bussiness.Entities.DTOs
+{
+	public class ABMUsuariosDTO_baja {
+		private var _user_id:String;
+		
+		public function ABMUsuariosDTO_baja(User_id:String) {
+			this._user_id=User_id;
+		}
+		public function get user_id():String
+		{
+			return _user_id;
+		}
+
+		public function set user_id(value:String):void
+		{
+			_user_id = value;
+		}
+	}
+}
+
